@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #23000e;
+  animation: animate-bg 5s ease-in-out infinite alternate;
+  margin: 0;
+}
+
+main {
+  margin: 0 auto;
+  height: 100vh;
+  width: 90%;
+  max-width: 900px;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  align-self: center;
+  font-size: calc(28px + 10vw);
+  line-height: 0.85;
+}
+
+p {
+  font-family: 'Fira Mono', 'Courier New', Courier, monospace;
+}
+
+a {
+  color: #fb4b4e;
+}
+
+@keyframes animate-bg {
+  0% {
+    background-color: #23000e;
+  }
+  100% {
+    background-color: #350418;
+  }
+}
