@@ -2,20 +2,27 @@ import React from "react";
 
 import Section from "../components/Layout/Section";
 import BackgroundSection from "../components/Layout/BackgroundImageSection";
-import "./../components/layout.scss";
+import HeroType from "../components/Typography/Hero/HeroType";
+import HeroContainer from "../components/Layout/HeroContainer";
 
-const IndexPage = () => (
-  <>
+import "./../components/layout.scss";
+import styled from "styled-components";
+
+const IndexPage = ({ className }) => (
+  <main className={className}>
     <BackgroundSection>
-      <h1>Hi people</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <HeroContainer>
+        <HeroType>{"<kayak />"}</HeroType>
+      </HeroContainer>
     </BackgroundSection>
     <Section>
       <h1>Yeah Nice</h1>
     </Section>
- 
-  </>
+  </main>
 );
 
-export default IndexPage;
+const StyledIndexPage = styled(IndexPage)`
+  background-color: #2d2d2d;
+`;
+
+export default StyledIndexPage;
