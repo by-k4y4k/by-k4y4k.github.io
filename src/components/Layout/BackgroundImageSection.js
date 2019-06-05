@@ -10,7 +10,7 @@ const BackgroundSection = (props, { className }) => (
       query {
         desktop: file(relativePath: { eq: "gatsby-icon.png" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 4160) {
+            fluid(quality: 90, maxWidth: 4160, grayscale: true) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -21,12 +21,7 @@ const BackgroundSection = (props, { className }) => (
       // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid;
       return (
-        <BackgroundImage
-          Tag='section'
-          className={className}
-          fluid={imageData}
-          backgroundColor={`#040e18`}
-        >
+        <BackgroundImage Tag='section' className={className} fluid={imageData}>
           {props.children}
         </BackgroundImage>
       );
@@ -36,8 +31,8 @@ const BackgroundSection = (props, { className }) => (
 
 const StyledBackgroundSection = styled(BackgroundSection)`
   width: 100%;
-  background-position: bottom center;
-  background-repeat: repeat-y;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 `;
 
