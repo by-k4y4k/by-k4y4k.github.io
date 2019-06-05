@@ -5,6 +5,8 @@
  */
 
 // You can delete this file if you're not using it
+
+// eslint-disable-next-line
 const onClientEntry = () => {
   // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
   if (typeof window.IntersectionObserver === `undefined`) {
