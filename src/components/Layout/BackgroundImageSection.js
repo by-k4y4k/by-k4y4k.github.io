@@ -8,10 +8,10 @@ const BackgroundSection = (props, { className }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: { eq: "gatsby-icon.png" }) {
+        desktop: file(relativePath: { eq: "cover.jpg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 4160, grayscale: true) {
-              ...GatsbyImageSharpFluid_withWebp
+            fluid(quality: 90, maxWidth: 4160) {
+              ...GatsbyImageSharpFluid
             }
           }
         }
