@@ -10,6 +10,7 @@ const StyledHeroContainer = styled(HeroContainer)`
   align-content: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
 `;
 
 export default StyledHeroContainer;
