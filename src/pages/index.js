@@ -2,8 +2,8 @@ import React from "react";
 
 // Layout imports
 import Section from "../components/Layout/Section";
-import BackgroundSection from "../components/Layout/BackgroundImageSection";
-import HeroContainer from "../components/Layout/HeroContainer";
+import BackgroundSection from "../components/Layout/Hero Section/BackgroundImageSection";
+import HeroContainer from "../components/Layout/Hero Section/HeroContainer";
 
 // Typography imports
 import HeroType from "../components/Typography/Hero/HeroType";
