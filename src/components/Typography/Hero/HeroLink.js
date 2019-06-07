@@ -7,10 +7,11 @@ const HeroLink = ({ className, children }) => {
 };
 
 const StyledHeroLink = styled(HeroLink)`
-  color: red;
+  color: white;
   text-transform: uppercase;
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Fira Sans", sans-serif !important;
   align-self: flex-start; /* make links be width of themselves, not container */
+  text-decoration: none;
 `;
 
 export default StyledHeroLink;
