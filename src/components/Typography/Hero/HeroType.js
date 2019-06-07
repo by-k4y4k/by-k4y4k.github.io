@@ -11,6 +11,8 @@ const StyledHeroType = styled(HeroType)`
   align-self: center;
   justify-content: center;
   font-size: 12.5vw;
+  /* account for POTENTIALLY GIANT TYPE */
+  margin-bottom: 7.5vw;
 `;
 
 export default StyledHeroType;
