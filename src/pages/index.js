@@ -7,7 +7,7 @@ import HeroContainer from "../components/Layout/HeroContainer";
 
 // Typography imports
 import HeroType from "../components/Typography/Hero/HeroType";
-import HeroContainer from "../components/Layout/HeroContainer";
+import HeroLink from "../components/Typography/Hero/HeroLink";
 
 import "./../components/layout.scss";
 import styled from "styled-components";
@@ -17,6 +17,10 @@ const IndexPage = ({ className }) => (
     <BackgroundSection>
       <HeroContainer>
         <HeroType>{"<kayak />"}</HeroType>
+        <HeroLink>work</HeroLink>
+        <HeroLink>about</HeroLink>
+        <HeroLink>hire</HeroLink>
+        <HeroLink>blog</HeroLink>
       </HeroContainer>
     </BackgroundSection>
     <Section>
