@@ -1,10 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
+import InnerSection from "./InnerSectionContainer";
+
 const Section = ({ className, children }) => {
   return (
-    <section style={{ width: "100vw", minHeight: "100vh" }}>
-      {props.children}
+    <section className={className}>
+      <InnerSection>{children}</InnerSection>
     </section>
   );
 };
