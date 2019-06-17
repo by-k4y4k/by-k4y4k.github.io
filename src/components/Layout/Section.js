@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
-import InnerSection from "./InnerSectionContainer";
+import InnerSection from './InnerSectionContainer';
 
-const Section = ({ className, children }) => {
+const Section = ({className, children}) => {
   return (
     <section className={className}>
       <InnerSection>{children}</InnerSection>

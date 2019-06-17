@@ -1,12 +1,12 @@
-import React from "react";
-import SEO from "../components/seo";
+import React from 'react';
+import SEO from '../components/seo';
 
-import Section from "../components/Layout/Section";
-import "./../components/layout.scss";
+import Section from '../components/Layout/Section';
+import './../components/layout.scss';
 
 const NotFoundPage = () => (
   <Section>
-    <SEO title="404: Not found" />
+    <SEO title='404: Not found' />
     <h1>WHUH OH</h1>
     <p>Yeah, nah, that page isn't here.</p>
   </Section>

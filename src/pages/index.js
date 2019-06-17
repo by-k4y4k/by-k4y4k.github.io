@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
 // Hero Links
-import { Link } from "gatsby";
+import {Link} from 'gatsby';
 
 // Layout imports
-import Section from "../components/Layout/Section";
-import BackgroundSection from "../components/Layout/Hero Section/BackgroundImageSection";
-import HeroContainer from "../components/Layout/Hero Section/HeroContainer";
+import Section from '../components/Layout/Section';
+import BackgroundSection from '../components/Layout/Hero Section/BackgroundImageSection';
+import HeroContainer from '../components/Layout/Hero Section/HeroContainer';
 
 // Typography imports
-import HeroType from "../components/Typography/Hero/HeroType";
+import HeroType from '../components/Typography/Hero/HeroType';
 
-import "./../components/layout.scss";
-import styled from "styled-components";
+import './../components/layout.scss';
+import styled from 'styled-components';
 
-const IndexPage = ({ className }) => (
+const IndexPage = ({className}) => (
   <main className={className}>
     <BackgroundSection>
       <HeroContainer>
-        <HeroType>{"<kayak />"}</HeroType>
+        <HeroType>{'<kayak />'}</HeroType>
         <div className='flex-sideways'>
           <Link to='#work' className='hero-link'>
             work
