@@ -1,5 +1,8 @@
 import React from "react";
 
+// Hero Links
+import { Link } from "gatsby";
+
 // Layout imports
 import Section from "../components/Layout/Section";
 import BackgroundSection from "../components/Layout/Hero Section/BackgroundImageSection";
@@ -7,7 +10,6 @@ import HeroContainer from "../components/Layout/Hero Section/HeroContainer";
 
 // Typography imports
 import HeroType from "../components/Typography/Hero/HeroType";
-import HeroLink from "../components/Typography/Hero/HeroLink";
 
 import "./../components/layout.scss";
 import styled from "styled-components";
@@ -18,24 +20,32 @@ const IndexPage = ({ className }) => (
       <HeroContainer>
         <HeroType>{"<kayak />"}</HeroType>
         <div className='flex-sideways'>
-          <HeroLink>work</HeroLink>
-          <HeroLink>about</HeroLink>
-          <HeroLink>hire</HeroLink>
-          <HeroLink>blog</HeroLink>
+          <Link to='#work' className='hero-link'>
+            work
+          </Link>
+          <Link to='#about' className='hero-link'>
+            about
+          </Link>
+          <Link to='#hire' className='hero-link'>
+            hire
+          </Link>
+          <Link to='#blog' className='hero-link'>
+            blog
+          </Link>
         </div>
       </HeroContainer>
     </BackgroundSection>
     <Section>
-      <h1>Work</h1>
+      <h1 id='work'>Work</h1>
     </Section>
     <Section>
-      <h1>About</h1>
+      <h1 id='about'>About</h1>
     </Section>
     <Section>
-      <h1>Hire</h1>
+      <h1 id='hire'>Hire</h1>
     </Section>
     <Section>
-      <h1>Blog</h1>
+      <h1 id='blog'>Blog</h1>
     </Section>
   </main>
 );
