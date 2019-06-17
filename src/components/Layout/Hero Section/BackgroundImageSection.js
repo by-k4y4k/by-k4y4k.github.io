@@ -1,10 +1,10 @@
-import React from "react";
-import { graphql, StaticQuery } from "gatsby";
-import styled from "styled-components";
+import React from 'react';
+import {graphql, StaticQuery} from 'gatsby';
+import styled from 'styled-components';
 
-import BackgroundImage from "gatsby-background-image";
+import BackgroundImage from 'gatsby-background-image';
 
-const BackgroundSection = (props, { className }) => (
+const BackgroundSection = (props, {className}) => (
   <StaticQuery
     query={graphql`
       query {
@@ -17,7 +17,7 @@ const BackgroundSection = (props, { className }) => (
         }
       }
     `}
-    render={data => {
+    render={(data) => {
       // Set ImageData.
       const imageData = data.desktop.childImageSharp.fluid;
       return (
