@@ -87,10 +87,17 @@ body {
 }
 
 // FIXME: Hero links being popped out into their own component meant that their props (i.e. to="") weren't being passed to Gatsby correctly
-.hero-link { 
+.hero-link {
   color: white;
   text-transform: uppercase;
   font-family: "Fira Sans", sans-serif !important;
   align-self: flex-start; /* make links be width of themselves, not container */
   text-decoration: none;
+}
+
+// FIXME: have card containing area  in own component
+.work__card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

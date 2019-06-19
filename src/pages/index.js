@@ -7,6 +7,7 @@ import {Link} from 'gatsby';
 import Section from '../components/Layout/Section';
 import BackgroundSection from '../components/Layout/Hero Section/BackgroundImageSection';
 import HeroContainer from '../components/Layout/Hero Section/HeroContainer';
+import CardContainer from '../components/Layout/Masonry Grid/CardContainer';
 
 // Typography imports
 import HeroType from '../components/Typography/Hero/HeroType';
@@ -37,6 +38,13 @@ const IndexPage = ({className}) => (
     </BackgroundSection>
     <Section>
       <h1 id='work'>Work</h1>
+      <div className='work__card-container'>
+        <CardContainer></CardContainer>
+        <CardContainer></CardContainer>
+        <CardContainer></CardContainer>
+        <CardContainer></CardContainer>
+        <CardContainer></CardContainer>
+      </div>
     </Section>
     <Section>
       <h1 id='about'>About</h1>
