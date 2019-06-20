@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import CardImage from './CardImage.js';
 import CardHeader from '../../Typography/Masonry Grid/CardHeader';
 import CardText from '../../Typography/Masonry Grid/CardText';
-// import CardText
+import CardTech from '../../Typography/Masonry Grid/CardTech';
 
 const CardContainer = ({className}) => {
   return (
@@ -15,6 +15,7 @@ const CardContainer = ({className}) => {
         Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
         yardarm.
       </CardText>
+      <CardTech>HTML, CSS, JavaScript</CardTech>
     </div>
   );
 };
