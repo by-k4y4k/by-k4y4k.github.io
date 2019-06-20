@@ -6,6 +6,7 @@ const CardText = ({className, children}) => {
 };
 
 const StyledCardText = styled(CardText)`
- `;
+  margin-bottom: 0;
+`;
 
 export default StyledCardText;
