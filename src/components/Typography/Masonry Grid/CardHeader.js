@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardText = ({children}) => {
-  console.log(children);
-
-  return <h4>{children}</h4>;
+const CardText = ({className, children}) => {
+  return <h4 className={className}>{children}</h4>;
 };
 
-export default CardText;
+const StyledCardText = styled(CardText)`
+  margin-bottom: 0;
+`;
+
+export default StyledCardText;

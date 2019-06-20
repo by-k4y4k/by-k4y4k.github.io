@@ -7,7 +7,7 @@ const CardTech = ({className, children}) => {
 
 const StyledCardTech = styled(CardTech)`
   color: #fb4b4e;
-  /* font-size: 50%; */
+  margin-bottom: 0;
 `;
 
 export default StyledCardTech;
