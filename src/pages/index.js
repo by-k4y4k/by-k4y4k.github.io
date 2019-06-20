@@ -12,6 +12,9 @@ import CardContainer from '../components/Layout/Masonry Grid/CardContainer';
 // Typography imports
 import HeroType from '../components/Typography/Hero/HeroType';
 
+// Content imports
+import AboutSectionContent from '../components/Content/AboutSectionContent';
+
 import './../components/layout.scss';
 import styled from 'styled-components';
 
@@ -48,6 +51,7 @@ const IndexPage = ({className}) => (
     </Section>
     <Section>
       <h1 id='about'>About</h1>
+      <AboutSectionContent></AboutSectionContent>
     </Section>
     <Section>
       <h1 id='hire'>Hire</h1>
