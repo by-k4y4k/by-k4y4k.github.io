@@ -14,6 +14,7 @@ import HeroType from '../components/Typography/Hero/HeroType';
 
 // Content imports
 import AboutSectionContent from '../components/Content/AboutSectionContent';
+import HireSectionContent from '../components/Content/HireSectionContent';
 
 import './../components/layout.scss';
 import styled from 'styled-components';
@@ -55,6 +56,7 @@ const IndexPage = ({className}) => (
     </Section>
     <Section>
       <h1 id='hire'>Hire</h1>
+      <HireSectionContent></HireSectionContent>
     </Section>
     <Section>
       <h1 id='blog'>Blog</h1>
