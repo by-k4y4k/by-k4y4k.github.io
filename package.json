@@ -50,7 +50,5 @@
   "bugs": {
     "url": "https://github.com/by-k4y4k/by-k4y4k.github.io/issues"
   },
-  "stylelint": {
-    "color-no-invalid-hex": true
-  }
+ 
 }
