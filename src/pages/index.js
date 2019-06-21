@@ -65,8 +65,6 @@ const IndexPage = ({className}) => (
   </main>
 );
 
-const StyledIndexPage = styled(IndexPage)`
-  background-color: #050509;
-`;
+const StyledIndexPage = styled(IndexPage)``;
 
 export default StyledIndexPage;
