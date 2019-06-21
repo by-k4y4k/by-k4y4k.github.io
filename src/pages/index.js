@@ -5,6 +5,7 @@ import {Link} from 'gatsby';
 
 // Layout imports
 import Section from '../components/Layout/Section';
+// eslint-disable-next-line
 import BackgroundSection from '../components/Layout/Hero Section/BackgroundImageSection';
 import HeroContainer from '../components/Layout/Hero Section/HeroContainer';
 import CardContainer from '../components/Layout/Masonry Grid/CardContainer';
