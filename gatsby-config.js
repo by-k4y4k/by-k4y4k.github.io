@@ -25,6 +25,7 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`,
       },
     },
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
