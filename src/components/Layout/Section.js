@@ -13,7 +13,7 @@ const Section = ({className, children}) => {
 
 const StyledSection = styled(Section)`
   width: 100vw;
-  min-height: 100vh;
+  min-height: auto;
 `;
 
 export default StyledSection;
