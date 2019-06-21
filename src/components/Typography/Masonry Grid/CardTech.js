@@ -6,7 +6,7 @@ const CardTech = ({className, children}) => {
 };
 
 const StyledCardTech = styled(CardTech)`
-  color: #fb4b4e;
+  color: #915fee;
   margin-bottom: 0;
 `;
 
