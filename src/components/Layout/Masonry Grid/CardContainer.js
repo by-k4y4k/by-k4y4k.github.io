@@ -24,7 +24,7 @@ const StyledCardContainer = styled(CardContainer)`
   box-sizing: border-box;
   height: auto;
   width: 30%;
-  border: 1px solid #22d07f;
+  border: 1px solid #915fee;
   margin: 10px;
   padding: 1rem;
 `;

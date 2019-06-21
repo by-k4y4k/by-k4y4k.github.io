@@ -1,6 +1,9 @@
 // global reset
 @import "../../node_modules/meyer-reset-scss/reset-src";
 
+// VARS
+$accent: #915fee;
+
 // TYPOGRAPHY ==================================================================
 
 html,
@@ -57,14 +60,21 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-p,
-a {
+p {
   margin-bottom: 3.5rem;
   font-family: "Fira Sans", sans-serif;
   font-size: 1.8em;
   line-height: 3.5rem;
   font-weight: 400;
   font-style: normal;
+}
+
+a {
+  color: $accent;
+  text-decoration: none;
+  &:hover {
+    color: #fff;
+  }
 }
 
 //  LAYOUT =====================================================================
