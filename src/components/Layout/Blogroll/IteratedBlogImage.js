@@ -7,6 +7,11 @@ const IteratedBlogImage = ({className, children}) => {
   );
 };
 
-const StyledIteratedBlogImage = styled(IteratedBlogImage)``;
+const StyledIteratedBlogImage = styled(IteratedBlogImage)`
+  max-width: 200px;
+  height: 100%;
+  align-self: center;
+  margin-right: 20px;
+`;
 
 export default StyledIteratedBlogImage;
