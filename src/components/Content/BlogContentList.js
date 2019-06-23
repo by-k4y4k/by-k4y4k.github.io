@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import {useStaticQuery, graphql} from 'gatsby';
 
 import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
+// eslint-disable-next-line
 import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer';
 
 const BlogContentList = ({className, children}) => {
