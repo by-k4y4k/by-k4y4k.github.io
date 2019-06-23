@@ -1,5 +1,5 @@
 ---
-title: Weekly Roundup /#1
+title: Weekly Roundup 1
 date: 22-06-19
 ---
 
