@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import {useStaticQuery, graphql} from 'gatsby';
 
 import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
- 
+import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer';
+
 const BlogContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
     {
@@ -34,9 +35,11 @@ const BlogContentList = ({className, children}) => {
           className={className}
           key={node.childMarkdownRemark.id}
         >
-          <h4>{node.childMarkdownRemark.frontmatter.title}</h4>
-          <p>Posted on {node.childMarkdownRemark.frontmatter.date}</p>
-          <p>{node.childMarkdownRemark.excerpt}</p>
+          <IteratedBlogTextContainer>
+            <h4>{node.childMarkdownRemark.frontmatter.title}</h4>
+            <p>Posted on {node.childMarkdownRemark.frontmatter.date}</p>
+            <p>{node.childMarkdownRemark.excerpt}</p>
+          </IteratedBlogTextContainer>
         </IteratedBlogContainer>
       ))}
     </>
