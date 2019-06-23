@@ -5,6 +5,8 @@ const IteratedBlogContainer = ({className, children}) => {
   return <article className={className}>{children}</article>;
 };
 
-const StyledIteratedBlogContainer = styled(IteratedBlogContainer)``;
+const StyledIteratedBlogContainer = styled(IteratedBlogContainer)`
+  display: flex;
+`;
 
 export default StyledIteratedBlogContainer;

@@ -6,8 +6,7 @@ const IteratedBlogTextContainer = ({className, children}) => {
 };
 
 const StyledIteratedBlogTextContainer = styled(IteratedBlogTextContainer)`
-  display: flex;
-  flex-direction: column;
+  flex-grow: 2;
 `;
 
 export default StyledIteratedBlogTextContainer;
