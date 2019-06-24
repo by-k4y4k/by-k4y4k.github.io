@@ -57,10 +57,6 @@ const IndexPage = ({className}) => (
       <AboutSectionContent></AboutSectionContent>
     </Section>
     <Section>
-      <h1 id='hire'>Hire</h1>
-      <HireSectionContent></HireSectionContent>
-    </Section>
-    <Section>
       <h1 id='blog'>Blog</h1>
       <BlogContentList></BlogContentList>
     </Section>
