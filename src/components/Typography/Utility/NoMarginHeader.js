@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const CardText = ({className, children}) => {
+const NoMarginHeader = ({className, children}) => {
   return <h4 className={className}>{children}</h4>;
 };
 
-const StyledCardText = styled(CardText)`
+const StyledNoMarginHeader = styled(NoMarginHeader)`
   margin-bottom: 0;
 `;
 
-export default StyledCardText;
+export default StyledNoMarginHeader;
