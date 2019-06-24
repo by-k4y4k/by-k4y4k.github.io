@@ -43,20 +43,21 @@ const BlogContentList = ({className}) => {
           <IteratedBlogImageContainer></IteratedBlogImageContainer>
           <IteratedBlogTextContainer>
             <NoMarginHeader>
-              <Link
-                to={node.childMarkdownRemark.fields.slug}
-                // FIXME: manual link color override: it feels dirty
-                style={{color: 'white'}}
-              >
-                {node.childMarkdownRemark.frontmatter.title}
-              </Link>
+              {node.childMarkdownRemark.frontmatter.title}
             </NoMarginHeader>
             <NoMarginParagraph>
               {node.childMarkdownRemark.excerpt}
             </NoMarginParagraph>
-            <NoMarginParagraph accent='true'>
-              Posted on {node.childMarkdownRemark.frontmatter.date}
-            </NoMarginParagraph>
+            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+              <NoMarginParagraph accent='true'>
+                Posted on {node.childMarkdownRemark.frontmatter.date}
+              </NoMarginParagraph>
+              <NoMarginParagraph>
+                <Link to={node.childMarkdownRemark.fields.slug}>
+                  {'Read More >>'}
+                </Link>
+              </NoMarginParagraph>
+            </div>
           </IteratedBlogTextContainer>
         </IteratedBlogContainer>
       ))}
