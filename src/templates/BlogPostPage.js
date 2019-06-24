@@ -1,12 +1,13 @@
 import React from 'react';
 import {Link, graphql} from 'gatsby';
+import styled from 'styled-components';
 
 import Section from '../components/Layout/Section';
 
-const BlogPostPage = ({data}) => {
+const BlogPostPage = ({className, data}) => {
   const post = data.markdownRemark;
   return (
-    <main>
+    <main className={`${className} blog`}>
       <Section>
         <p>
           <Link to='/#blog'>{'<< go back'}</Link>
@@ -34,4 +35,8 @@ export const query = graphql`
   }
 `;
 
-export default BlogPostPage;
+
+const StyledBlogPostPage = styled(BlogPostPage
+)``;
+
+export default StyledBlogPostPage;

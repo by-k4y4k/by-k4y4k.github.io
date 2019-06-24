@@ -117,3 +117,11 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
+.blog {
+  p {
+    img {
+      width: 100%;
+    }
+  }
+}
