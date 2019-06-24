@@ -9,7 +9,7 @@ import IteratedBlogImageContainer from '../Layout/Blogroll/IteratedBlogImage';
 import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
 import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
 
-const BlogContentList = ({className, children}) => {
+const BlogContentList = ({className}) => {
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { glob: "*/blog/*" } }) {
@@ -20,7 +20,7 @@ const BlogContentList = ({className, children}) => {
                 title
                 date
               }
-              excerpt(format: PLAIN, pruneLength: 33, truncate: true)
+              excerpt(format: PLAIN, pruneLength: 150, truncate: true)
               id
             }
           }
