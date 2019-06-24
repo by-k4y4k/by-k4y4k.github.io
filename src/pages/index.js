@@ -15,7 +15,6 @@ import HeroType from '../components/Typography/Hero/HeroType';
 
 // Content imports
 import AboutSectionContent from '../components/Content/AboutSectionContent';
-import HireSectionContent from '../components/Content/HireSectionContent';
 import BlogContentList from '../components/Content/BlogContentList';
 
 import './../components/layout.scss';
