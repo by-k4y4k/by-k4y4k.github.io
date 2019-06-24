@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {useStaticQuery, graphql} from 'gatsby';
+import {Link, useStaticQuery, graphql} from 'gatsby';
 
 import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
 // eslint-disable-next-line
@@ -22,6 +22,9 @@ const BlogContentList = ({className}) => {
               }
               excerpt(format: PLAIN, pruneLength: 150, truncate: true)
               id
+              fields {
+                slug
+              }
             }
           }
         }
@@ -40,7 +43,13 @@ const BlogContentList = ({className}) => {
           <IteratedBlogImageContainer></IteratedBlogImageContainer>
           <IteratedBlogTextContainer>
             <NoMarginHeader>
-              {node.childMarkdownRemark.frontmatter.title}
+              <Link
+                to={node.childMarkdownRemark.fields.slug}
+                // FIXME: manual link color override: it feels dirty
+                style={{color: 'white'}}
+              >
+                {node.childMarkdownRemark.frontmatter.title}
+              </Link>
             </NoMarginHeader>
             <NoMarginParagraph>
               {node.childMarkdownRemark.excerpt}
