@@ -42,8 +42,12 @@ const IndexPage = ({className}) => (
         </div>
       </HeroContainer>
     </BackgroundSection>
+
     <Section>
-      <h1 id='work'>Work</h1>
+      <AboutSectionContent></AboutSectionContent>
+    </Section>
+
+    <Section>
       <div className='work__card-container'>
         <CardContainer></CardContainer>
         <CardContainer></CardContainer>
@@ -52,12 +56,8 @@ const IndexPage = ({className}) => (
         <CardContainer></CardContainer>
       </div>
     </Section>
+
     <Section>
-      <h1 id='about'>About</h1>
-      <AboutSectionContent></AboutSectionContent>
-    </Section>
-    <Section>
-      <h1 id='blog'>Blog</h1>
       <BlogContentList></BlogContentList>
     </Section>
   </main>
