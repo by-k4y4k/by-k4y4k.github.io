@@ -12,6 +12,11 @@ const StyledIteratedBlogImage = styled(IteratedBlogImage)`
   height: 100%;
   align-self: center;
   margin-right: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px #915fee;
+  border: 3px solid #050509;
+  border-left: 0;
+  border-top: 0;
 `;
 
 export default StyledIteratedBlogImage;
