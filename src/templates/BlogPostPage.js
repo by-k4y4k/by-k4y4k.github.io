@@ -9,10 +9,10 @@ const BlogPostPage = ({data}) => {
     <main>
       <Section>
         <p>
-          <Link to='/'>{'<< go back'}</Link>
+          <Link to='/#blog'>{'<< go back'}</Link>
         </p>
       </Section>
-      
+
       <Section>
         <div>
           <h1>{post.frontmatter.title}</h1>
