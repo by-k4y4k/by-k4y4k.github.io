@@ -8,7 +8,6 @@
 
 const path = require(`path`);
 
-
 const {createFilePath} = require(`gatsby-source-filesystem`);
 
 exports.onCreateNode = ({node, getNode, actions}) => {
@@ -25,9 +24,12 @@ exports.onCreateNode = ({node, getNode, actions}) => {
 
 exports.createPages = ({graphql, actions}) => {
   const {createPage} = actions;
+
   return graphql(`
     {
-      allMarkdownRemark {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(blog)/.*\\\\.md$/" } }
+      ) {
         edges {
           node {
             fields {
