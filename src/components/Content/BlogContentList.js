@@ -6,6 +6,8 @@ import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
 // eslint-disable-next-line
 import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer';
 import IteratedBlogImageContainer from '../Layout/Blogroll/IteratedBlogImage';
+import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
+import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
 
 const BlogContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
@@ -37,9 +39,15 @@ const BlogContentList = ({className, children}) => {
         >
           <IteratedBlogImageContainer></IteratedBlogImageContainer>
           <IteratedBlogTextContainer>
-            <h4>{node.childMarkdownRemark.frontmatter.title}</h4>
-            <p>{node.childMarkdownRemark.excerpt}</p>
-            <p>Posted on {node.childMarkdownRemark.frontmatter.date}</p>
+            <NoMarginHeader>
+              {node.childMarkdownRemark.frontmatter.title}
+            </NoMarginHeader>
+            <NoMarginParagraph>
+              {node.childMarkdownRemark.excerpt}
+            </NoMarginParagraph>
+            <NoMarginParagraph accent='true'>
+              Posted on {node.childMarkdownRemark.frontmatter.date}
+            </NoMarginParagraph>
           </IteratedBlogTextContainer>
         </IteratedBlogContainer>
       ))}
