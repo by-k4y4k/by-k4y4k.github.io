@@ -14,7 +14,7 @@ const CardContainer = ({className}) => {
         Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
         yardarm.
       </NoMarginParagraph>
-      <NoMarginParagraph>HTML, CSS, JavaScript</NoMarginParagraph>
+      <NoMarginParagraph accent='true'>HTML, CSS, JavaScript</NoMarginParagraph>
     </div>
   );
 };
