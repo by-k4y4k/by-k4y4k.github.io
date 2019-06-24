@@ -7,6 +7,8 @@ const IteratedBlogContainer = ({className, children}) => {
 
 const StyledIteratedBlogContainer = styled(IteratedBlogContainer)`
   display: flex;
+  margin-bottom: 2em;
+  padding-bottom: 2em;
 `;
 
 export default StyledIteratedBlogContainer;

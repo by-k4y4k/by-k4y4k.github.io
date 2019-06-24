@@ -6,7 +6,7 @@ const IteratedBlogTextContainer = ({className, children}) => {
 };
 
 const StyledIteratedBlogTextContainer = styled(IteratedBlogTextContainer)`
-  flex-grow: 2;
+  text-align: left;
 `;
 
 export default StyledIteratedBlogTextContainer;
