@@ -2,20 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 
 import CardImage from './CardImage.js';
-import CardHeader from '../../Typography/Masonry Grid/CardHeader';
-import CardText from '../../Typography/Masonry Grid/CardText';
-import CardTech from '../../Typography/Masonry Grid/CardTech';
+import NoMarginHeader from '../../Typography/Utility/NoMarginHeader';
+import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
 
 const CardContainer = ({className}) => {
   return (
     <div className={className}>
       <CardImage></CardImage>
-      <CardHeader>Card Header</CardHeader>
-      <CardText>
+      <NoMarginHeader>Card Header</NoMarginHeader>
+      <NoMarginParagraph>
         Prow scuttle parrel provost Sail ho shrouds spirits boom mizzenmast
         yardarm.
-      </CardText>
-      <CardTech>HTML, CSS, JavaScript</CardTech>
+      </NoMarginParagraph>
+      <NoMarginParagraph>HTML, CSS, JavaScript</NoMarginParagraph>
     </div>
   );
 };
