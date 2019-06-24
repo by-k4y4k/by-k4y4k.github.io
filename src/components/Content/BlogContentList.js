@@ -40,8 +40,8 @@ const BlogContentList = ({className, children}) => {
           <IteratedBlogImageContainer></IteratedBlogImageContainer>
           <IteratedBlogTextContainer>
             <h4>{node.childMarkdownRemark.frontmatter.title}</h4>
-            <p>Posted on {node.childMarkdownRemark.frontmatter.date}</p>
             <p>{node.childMarkdownRemark.excerpt}</p>
+            <p>Posted on {node.childMarkdownRemark.frontmatter.date}</p>
           </IteratedBlogTextContainer>
         </IteratedBlogContainer>
       ))}
