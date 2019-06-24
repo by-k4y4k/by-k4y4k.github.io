@@ -7,6 +7,7 @@ const NoMarginParagraph = ({className, children}) => {
 
 const StyledNoMarginParagraph = styled(NoMarginParagraph)`
   margin-bottom: 0;
+  color: ${(props) => (props.accent ? '#915fee' : null)};
 `;
 
 export default StyledNoMarginParagraph;
