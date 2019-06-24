@@ -29,7 +29,7 @@
   "devDependencies": {
     "eslint": "6.0.0",
     "eslint-config-google": "0.13.0",
-    "eslint-plugin-react": "7.14.1",
+    "eslint-plugin-react": "7.14.2",
     "meyer-reset-scss": "2.0.4",
     "prettier": "1.17.1"
   },
