@@ -27,14 +27,11 @@ const IndexPage = ({className}) => (
       <HeroContainer>
         <HeroType>{'<kayak />'}</HeroType>
         <div className='flex-sideways'>
-          <Link to='#work' className='hero-link'>
-            work
-          </Link>
           <Link to='#about' className='hero-link'>
             about
           </Link>
-          <Link to='#hire' className='hero-link'>
-            hire
+          <Link to='#work' className='hero-link'>
+            work
           </Link>
           <Link to='#blog' className='hero-link'>
             blog
@@ -44,10 +41,12 @@ const IndexPage = ({className}) => (
     </BackgroundSection>
 
     <Section>
+      <div id='about'></div>
       <AboutSectionContent></AboutSectionContent>
     </Section>
 
     <Section>
+      <div id='work'></div>
       <div className='work__card-container'>
         <CardContainer></CardContainer>
         <CardContainer></CardContainer>
@@ -58,6 +57,7 @@ const IndexPage = ({className}) => (
     </Section>
 
     <Section>
+      <div id='blog'></div>
       <BlogContentList></BlogContentList>
     </Section>
   </main>
