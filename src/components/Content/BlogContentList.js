@@ -28,8 +28,6 @@ const BlogContentList = ({className, children}) => {
     }
   `);
 
-  console.log(data.allFile);
-
   return (
     <>
       {data.allFile.edges.map(({node}) => (
