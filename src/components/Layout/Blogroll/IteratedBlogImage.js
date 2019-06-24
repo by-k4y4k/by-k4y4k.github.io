@@ -8,7 +8,7 @@ const IteratedBlogImage = ({className, children}) => {
 };
 
 const StyledIteratedBlogImage = styled(IteratedBlogImage)`
-  max-width: 200px;
+  max-width: 33%;
   height: 100%;
   align-self: center;
   margin-right: 20px;
