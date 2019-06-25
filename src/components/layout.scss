@@ -82,6 +82,34 @@ a {
   }
 }
 
+ul {
+  list-style-type: disc;
+  padding-left: 10px;
+  margin-left: 15px;
+  margin-bottom: 3.5rem;
+  li {
+    @extend p;
+    margin: 0;
+    text-align: left;
+  }
+}
+
+ol {
+  list-style-type: decimal;
+  padding-left: 10px;
+  margin-left: 15px;
+  margin-bottom: 3.5rem;
+  li {
+    @extend p;
+    margin: 0;
+  }
+}
+
+figcaption {
+  @extend p;
+  text-align: center;
+}
+
 //  LAYOUT =====================================================================
 
 body {
