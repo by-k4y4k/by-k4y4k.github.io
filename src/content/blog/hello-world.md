@@ -1,6 +1,7 @@
 ---
 title: Hello World!
 date: 22-06-19
+featured-image: "images/gatsby-astronaut.png"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel felis viverra, interdum enim sit amet, dictum dui. Nunc luctus imperdiet lectus in semper.
@@ -31,6 +32,14 @@ By <a href="https://en.wikipedia.org/wiki/User:Mfield" class="extiw" title="en:U
 
 ### But not as fast as planes
 
+<div class="full-width">
+
 ![A plane](https://upload.wikimedia.org/wikipedia/commons/f/fc/Tarom.b737-700.yr-bgg.arp.jpg)
 
+The following looks a bit wonky, but should work if I remember to crop the image correctly.
+
+</div>
+
 By Adrian Pingstone (<a href="//commons.wikimedia.org/wiki/User:Arpingstone" title="User:Arpingstone">Arpingstone</a>) - <span class="int-own-work" lang="en">Own work</span>, Public Domain, <a href="https://commons.wikimedia.org/w/index.php?curid=2688685">Link</a>
+
+![A very dapper astronaut](../../images/gatsby-icon.png)
