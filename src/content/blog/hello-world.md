@@ -32,11 +32,11 @@ By <a href="https://en.wikipedia.org/wiki/User:Mfield" class="extiw" title="en:U
 
 ### But not as fast as planes
 
+The following looks a bit wonky, but should work if I remember to crop the image correctly.
+
 <div class="full-width">
 
 ![A plane](https://upload.wikimedia.org/wikipedia/commons/f/fc/Tarom.b737-700.yr-bgg.arp.jpg)
-
-The following looks a bit wonky, but should work if I remember to crop the image correctly.
 
 </div>
 
