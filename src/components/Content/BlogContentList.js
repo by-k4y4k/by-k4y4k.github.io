@@ -40,7 +40,7 @@ const BlogContentList = ({className}) => {
           className={className}
           key={node.childMarkdownRemark.id}
         >
-          <IteratedBlogImageContainer></IteratedBlogImageContainer>
+          {/* <IteratedBlogImageContainer></IteratedBlogImageContainer> */}
           <IteratedBlogTextContainer>
             <NoMarginHeader>
               {node.childMarkdownRemark.frontmatter.title}
