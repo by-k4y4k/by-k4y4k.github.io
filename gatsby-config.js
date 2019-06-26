@@ -40,7 +40,7 @@ module.exports = {
               linkImagesToOriginal: true,
               showCaptions: [`alt`, `title`],
               withWebp: true,
-              backgroundColor: `#0000000`,
+              backgroundColor: `#050509`,
             },
           },
         ],
