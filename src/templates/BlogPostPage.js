@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import Section from '../components/Layout/Section';
 import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader';
+import BlogPostFooter from '../components/Layout/Blog Posts/BlogPostFooter';
 
 const BlogPostPage = ({className, data}) => {
   const post = data.markdownRemark;
@@ -16,6 +17,7 @@ const BlogPostPage = ({className, data}) => {
           <div dangerouslySetInnerHTML={{__html: post.html}} />
         </div>
       </Section>
+      <BlogPostFooter></BlogPostFooter>
     </main>
   );
 };
