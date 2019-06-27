@@ -3,17 +3,13 @@ import {Link, graphql} from 'gatsby';
 import styled from 'styled-components';
 
 import Section from '../components/Layout/Section';
+import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader';
 
 const BlogPostPage = ({className, data}) => {
   const post = data.markdownRemark;
   return (
     <main className={`${className} blog`}>
-      <Section>
-        <p>
-          <Link to='/#blog'>{'<< go back'}</Link>
-        </p>
-      </Section>
-
+      <BlogPostHeader data={data}/>
       <Section>
         <div>
           <h1>{post.frontmatter.title}</h1>
@@ -35,8 +31,6 @@ export const query = graphql`
   }
 `;
 
-
-const StyledBlogPostPage = styled(BlogPostPage
-)``;
+const StyledBlogPostPage = styled(BlogPostPage)``;
 
 export default StyledBlogPostPage;
