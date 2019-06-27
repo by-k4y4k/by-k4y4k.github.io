@@ -26,7 +26,20 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
+      timeToRead
+      wordCount {
+        words
+      }
+      parent {
+        ... on File {
+          prettySize
+          name
+        }
+      }
+ 
+ 
     }
   }
 `;
