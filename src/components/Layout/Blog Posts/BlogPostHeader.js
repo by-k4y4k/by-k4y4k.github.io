@@ -9,7 +9,7 @@ import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminal
 const BlogPostHeader = ({data}) => {
   return (
     <Section>
-      <p>
+      <NoMarginParagraph>
         <code>{data.markdownRemark.parent.name}.md</code>
         {` - `}
         <code>{data.markdownRemark.timeToRead} minute read</code>
@@ -17,12 +17,13 @@ const BlogPostHeader = ({data}) => {
         <code>{data.markdownRemark.frontmatter.date}</code>
         {` - `}
         <code>{data.markdownRemark.parent.prettySize}</code>
-      </p>
-      <NoMarginParagraph>
-        <Link to="/#blog">
-          <kbd>$ cd ../ </kbd>
-          <BlinkingTerminalCursor></BlinkingTerminalCursor>
-        </Link>
+        {` - `}
+        <code>
+          <Link to="/#blog">
+            <kbd>$ cd ../ && ls </kbd>
+            <BlinkingTerminalCursor></BlinkingTerminalCursor>
+          </Link>
+        </code>
       </NoMarginParagraph>
     </Section>
   );
