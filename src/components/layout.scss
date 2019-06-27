@@ -110,6 +110,13 @@ figcaption {
   text-align: center;
 }
 
+code {
+  border: 1px solid $accent;
+  border-radius: 10px;
+  font-family: monospace;
+  padding: 0.5rem 1rem;
+}
+
 //  LAYOUT =====================================================================
 
 body {
