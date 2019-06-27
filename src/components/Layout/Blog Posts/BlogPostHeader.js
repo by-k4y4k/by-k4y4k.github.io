@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import {Link} from 'gatsby';
 
 import Section from '../Section';
@@ -7,8 +6,7 @@ import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
 // eslint-disable-next-line
 import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor';
 
-const BlogPostHeader = ({className, children, data}) => {
-  console.log(data);
+const BlogPostHeader = ({data}) => {
   return (
     <Section>
       <p>
@@ -21,13 +19,13 @@ const BlogPostHeader = ({className, children, data}) => {
         <code>{data.markdownRemark.parent.prettySize}</code>
       </p>
       <NoMarginParagraph>
+        <Link to="/#blog">
           <kbd>$ cd ../ </kbd>
           <BlinkingTerminalCursor></BlinkingTerminalCursor>
+        </Link>
       </NoMarginParagraph>
     </Section>
   );
 };
 
-const StyledBlogPostHeader = styled(BlogPostHeader)``;
-
-export default StyledBlogPostHeader;
+export default BlogPostHeader;
