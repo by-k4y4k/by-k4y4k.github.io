@@ -4,6 +4,8 @@ import {Link} from 'gatsby';
 
 import Section from '../Section';
 import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
+// eslint-disable-next-line
+import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor';
 
 const BlogPostHeader = ({className, children, data}) => {
   console.log(data);
@@ -19,7 +21,8 @@ const BlogPostHeader = ({className, children, data}) => {
         <code>{data.markdownRemark.parent.prettySize}</code>
       </p>
       <NoMarginParagraph>
-        <kbd>$ cd ../</kbd>
+          <kbd>$ cd ../ </kbd>
+          <BlinkingTerminalCursor></BlinkingTerminalCursor>
       </NoMarginParagraph>
     </Section>
   );
