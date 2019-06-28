@@ -110,11 +110,44 @@ figcaption {
   text-align: center;
 }
 
-code {
+em {
+  font-style: italic;
+}
+
+// CODE HIGHLIGHTING ===========================================================
+
+pre[class*="language-"] {
+  background-color: transparent;
+  min-width: 100%; /* 2 */
   border: 1px solid $accent;
+  font-size: 1.8em;
+}
+
+code {
   border-radius: 10px;
   font-family: monospace;
+  border: 1px solid $accent;
   padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  color: inherit;
+}
+
+pre {
+  border-radius: 10px;
+  padding: 1rem;
+  border: 1px solid $accent;
+  font-size: 1.8em;
+  margin-bottom: 3.5em;
+  color: inherit;
+  code {
+    border: 0;
+    padding: 0;
+    color: inherit;
+  }
+}
+
+:not(pre) > code[class*="language-"] {
+  border-radius: 10px;
 }
 
 //  LAYOUT =====================================================================
@@ -173,6 +206,6 @@ body {
   overflow: hidden;
 }
 
-.accent{
+.accent {
   color: $accent;
 }
