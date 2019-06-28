@@ -12,9 +12,11 @@ const Section = ({className, children}) => {
 };
 
 const StyledSection = styled(Section)`
-  width: 100vw;
+  max-width: 100%; 
+  width:90%;
   min-height: auto;
   padding: 2em 0;
+  margin: 0 auto;
 `;
 
 export default StyledSection;
