@@ -11,7 +11,7 @@ const BlogPostFooter = ({className}) => {
   return (
     <Section className={className}>
       <NoMarginParagraph>
-        Finished up here?
+        All done?
         {'  '}
         <code>
           <Link to='/#blog'>
