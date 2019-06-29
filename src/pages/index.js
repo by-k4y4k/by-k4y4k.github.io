@@ -1,5 +1,8 @@
 import React from 'react';
 
+// Meta imports
+import {Helmet} from 'react-helmet';
+
 // Hero Links
 import {Link} from 'gatsby';
 
@@ -22,6 +25,11 @@ import styled from 'styled-components';
 
 const IndexPage = ({className}) => (
   <main className={className}>
+    <Helmet>
+      <meta charSet="utf-8" />
+      <title>{'<kayak /> | Web Developer & Designer'}</title>
+      <html lang="en-au"></html>
+    </Helmet>
     <BackgroundSection>
       <HeroContainer>
         <HeroType>{'<kayak />'}</HeroType>

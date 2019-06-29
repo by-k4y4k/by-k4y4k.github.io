@@ -1,6 +1,7 @@
 import React from 'react';
 import {graphql} from 'gatsby';
 import styled from 'styled-components';
+import {Helmet} from 'react-helmet';
 
 import Section from '../components/Layout/Section';
 import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader';
@@ -10,6 +11,13 @@ const BlogPostPage = ({className, data}) => {
   const post = data.markdownRemark;
   return (
     <main className={`${className} blog`}>
+      <Helmet>
+        <meta charSet="utf-8"></meta>
+        <title>
+          {`${post.frontmatter.title} | <kayak /> | Web Developer & Designer`}
+        </title>
+        <html lang="en-au"></html>
+      </Helmet>
       <BlogPostHeader data={data}/>
       <Section>
         <div>
