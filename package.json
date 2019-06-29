@@ -5,17 +5,17 @@
   "version": "0.1.0",
   "author": "kayak",
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.2",
+    "babel-plugin-styled-components": "1.10.2",
     "gatsby": "2.8.2",
     "gatsby-background-image": "0.7.0",
     "gatsby-image": "2.1.2",
     "gatsby-plugin-manifest": "2.1.1",
     "gatsby-plugin-offline": "2.1.1",
     "gatsby-plugin-prefetch-google-fonts": "1.4.2",
-    "gatsby-plugin-react-helmet": "3.0.12",
+    "gatsby-plugin-react-helmet": "3.1.0",
     "gatsby-plugin-sass": "2.0.11",
     "gatsby-plugin-sharp": "2.2.1",
-    "gatsby-plugin-styled-components": "^3.1.0",
+    "gatsby-plugin-styled-components": "3.1.0",
     "gatsby-remark-images": "3.1.0",
     "gatsby-remark-prismjs": "3.3.0",
     "gatsby-source-filesystem": "2.0.43",
@@ -28,7 +28,7 @@
     "react": "16.8.6",
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
-    "styled-components": "^4.3.2"
+    "styled-components": "4.3.2"
   },
   "devDependencies": {
     "eslint": "6.0.1",
