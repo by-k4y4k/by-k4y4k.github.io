@@ -5,6 +5,8 @@ title: Example project
 image: "../../images/gatsby-icon.png"
 ---
 
-An example project.
+I'm so good at doing code, I made this thing!
 
-I'm so good at code, I made this thing! I'm so proud of it, I'm putting it on my website for all to see.
+<!-- end excerpt -->
+
+I'm so proud of it, I'm putting it on my website for all to see.
