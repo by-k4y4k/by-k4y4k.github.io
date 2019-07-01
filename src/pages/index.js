@@ -26,9 +26,13 @@ import styled from 'styled-components';
 const IndexPage = ({className}) => (
   <main className={className}>
     <Helmet>
-      <meta charSet="utf-8" />
+      <html lang='en-au' />
+      <meta charSet='utf-8' />
       <title>{'<kayak /> | Web Developer & Designer'}</title>
-      <html lang="en-au"></html>
+      <meta
+        name='description'
+        content='Aussie web developer and designer availiable for hire. Committed to good code and a good Vegemite sandwich.'
+      />
     </Helmet>
     <BackgroundSection>
       <HeroContainer>
@@ -48,24 +52,24 @@ const IndexPage = ({className}) => (
     </BackgroundSection>
 
     <Section>
-      <div id='about'></div>
-      <AboutSectionContent></AboutSectionContent>
+      <div id='about' />
+      <AboutSectionContent />
     </Section>
 
     <Section>
-      <div id='work'></div>
+      <div id='work' />
       <div className='work__card-container'>
-        <CardContainer></CardContainer>
-        <CardContainer></CardContainer>
-        <CardContainer></CardContainer>
-        <CardContainer></CardContainer>
-        <CardContainer></CardContainer>
+        <CardContainer />
+        <CardContainer />
+        <CardContainer />
+        <CardContainer />
+        <CardContainer />
       </div>
     </Section>
 
     <Section>
-      <div id='blog'></div>
-      <BlogContentList></BlogContentList>
+      <div id='blog' />
+      <BlogContentList />
     </Section>
   </main>
 );
