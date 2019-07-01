@@ -63,6 +63,18 @@ h6 {
   font-weight: 900;
   margin-bottom: 3.5rem;
   font-family: "Montserrat", sans-serif;
+  hyphens: auto;
+  word-wrap: break-word;
+}
+
+// FIXME: make Sass media mixins
+@media (max-width: 375px) {
+  div[class*="CardContainer__"] {
+    h4[class*="NoMarginHeader__"] {
+      // Squish card headers together on smaller screens
+      line-height: 5rem;
+    }
+  }
 }
 
 p {
@@ -72,6 +84,8 @@ p {
   line-height: 3.5rem;
   font-weight: 400;
   font-style: normal;
+  hyphens: none;
+  word-wrap: break-word;
 }
 
 a {
