@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `<kayak /> | Web Developer & Designer`,
+    // eslint-disable-next-line
     description: `Aussie web developer and designer availiable for hire. Committed to good code, good looks, and a good Vegemite sandwich.`,
     twitterUsername: `@by_k4y4k`,
     url: 'https://kayak.rocks',

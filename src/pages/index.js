@@ -31,6 +31,7 @@ const IndexPage = ({className}) => (
       <title>{'<kayak /> | Web Developer & Designer'}</title>
       <meta
         name='description'
+        // eslint-disable-next-line
         content='Aussie web developer and designer availiable for hire. Committed to good code and a good Vegemite sandwich.'
       />
     </Helmet>
