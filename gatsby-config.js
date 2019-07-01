@@ -5,6 +5,19 @@ module.exports = {
     author: `@by_kayak`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `<kayak /> | Web Developer & Designer`,
+        short_name: `<kayak />`,
+        start_url: `/`,
+        background_color: `#915fee`,
+        theme_color: `#915fee`,
+        display: `standalone`,
+        // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -13,19 +26,6 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        // This path is relative to the root of the site.
-        icon: `src/images/gatsby-icon.png`,
-      },
-    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
