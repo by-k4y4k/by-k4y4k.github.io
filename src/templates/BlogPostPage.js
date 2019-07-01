@@ -12,20 +12,21 @@ const BlogPostPage = ({className, data}) => {
   return (
     <main className={`${className} blog`}>
       <Helmet>
-        <meta charSet="utf-8"></meta>
+        <html lang='en-au' />
+        <meta charSet='utf-8' />
         <title>
           {`${post.frontmatter.title} | <kayak /> | Web Developer & Designer`}
         </title>
-        <html lang="en-au"></html>
+        <meta name='description' content={data.markdownRemark.excerpt} />
       </Helmet>
-      <BlogPostHeader data={data}/>
+      <BlogPostHeader data={data} />
       <Section>
         <div>
           <h1>{post.frontmatter.title}</h1>
           <div dangerouslySetInnerHTML={{__html: post.html}} />
         </div>
       </Section>
-      <BlogPostFooter></BlogPostFooter>
+      <BlogPostFooter />
     </main>
   );
 };
@@ -48,8 +49,7 @@ export const query = graphql`
           name
         }
       }
- 
- 
+      excerpt
     }
   }
 `;
