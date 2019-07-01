@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import CardImage from './CardImage.js';
+import CardImage from './IteratedCardImage.js';
 import NoMarginHeader from '../../Typography/Utility/NoMarginHeader';
 import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
 
