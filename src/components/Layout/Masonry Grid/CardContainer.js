@@ -24,11 +24,17 @@ const StyledCardContainer = styled(CardContainer)`
   height: auto;
   width: 30%;
   border: 1px solid #915fee;
-  margin: 10px;
+  margin: 1%;
   padding: 1rem;
 
-  @media (max-width: 375px) {
+  @media (max-width: 425px) {
     width: 100%;
+  }
+  @media (min-width: 426px) and (max-width: 1023px) {
+    width: 45%;
+  }
+  @media (min-width: 1024px) {
+    width: 30%;
   }
 `;
 
