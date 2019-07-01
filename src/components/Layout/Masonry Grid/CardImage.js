@@ -8,9 +8,11 @@ const CardImage = ({className, children}) => {
 };
 
 const StyledCardImage = styled(CardImage)`
+  display: block;
   max-width: 100%;
   min-width: 33%;
-  display: block;
+  min-height: 150px;
+  background-color: #ccc;
 `;
 
 export default StyledCardImage;

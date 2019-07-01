@@ -6,7 +6,6 @@ const InnerSection = ({className, children}) => {
 };
 
 const StyledInnerSection = styled(InnerSection)`
-  width: 100%;
   max-width: 960px;
   margin: 0 auto;
   color: white;
