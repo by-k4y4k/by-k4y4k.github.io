@@ -5,7 +5,6 @@ import {Link, useStaticQuery, graphql} from 'gatsby';
 import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
 // eslint-disable-next-line
 import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer';
-import IteratedBlogImageContainer from '../Layout/Blogroll/IteratedBlogImage';
 import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
 import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
 
