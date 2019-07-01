@@ -5,7 +5,7 @@
   "version": "0.1.0",
   "author": "kayak",
   "dependencies": {
-    "babel-plugin-styled-components": "1.10.2",
+    "babel-plugin-styled-components": "1.10.5",
     "gatsby": "2.8.2",
     "gatsby-background-image": "0.7.0",
     "gatsby-image": "2.1.2",
