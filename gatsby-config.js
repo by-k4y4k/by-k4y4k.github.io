@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `<kayak />`,
-    description: `Portfolio Site`,
-    author: `@by_kayak`,
+    title: `<kayak /> | Web Developer & Designer`,
+    description: `Aussie web developer and designer availiable for hire. Committed to good code, good looks, and a good Vegemite sandwich.`,
+    twitterUsername: `@by_k4y4k`,
+    url: 'https://kayak.rocks',
+    image: 'src/images/icon.png',
+    author: 'kayak',
   },
   plugins: [
     {
