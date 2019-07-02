@@ -11,7 +11,6 @@ import Section from '../components/Layout/Section';
 // eslint-disable-next-line
 import BackgroundSection from '../components/Layout/Hero Section/BackgroundImageSection';
 import HeroContainer from '../components/Layout/Hero Section/HeroContainer';
-import CardContainer from '../components/Layout/Masonry Grid/IteratedCardContainer';
 
 // Typography imports
 import HeroType from '../components/Typography/Hero/HeroType';
@@ -22,6 +21,7 @@ import BlogContentList from '../components/Content/BlogContentList';
 
 import './../components/layout.scss';
 import styled from 'styled-components';
+import WorkContentList from '../components/Content/WorkContentList';
 
 const IndexPage = ({className}) => (
   <main className={className}>
@@ -60,7 +60,7 @@ const IndexPage = ({className}) => (
     <Section>
       <div id='work' />
       <div className='work__card-container'>
-
+        <WorkContentList />
       </div>
     </Section>
 
