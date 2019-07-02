@@ -76,22 +76,15 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: `Montserrat`,
-            variants: [`900i`],
-          },
-          {
-            family: `Fira Sans`,
-            variants: [`400`, `400i`],
-          },
-        ],
+        google: {
+          families: ['Montserrat:900i', 'Fira Sans:400,400i'],
+        },
       },
     },
+    `gatsby-plugin-sass`,
     // this (optional) plugin enables Progressive Web App
     // + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
