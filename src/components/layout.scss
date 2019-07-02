@@ -67,13 +67,10 @@ h6 {
   word-wrap: break-word;
 }
 
-// FIXME: make Sass media mixins
-@media (max-width: 375px) {
-  div[class*="CardContainer__"] {
-    h4[class*="NoMarginHeader__"] {
-      // Squish card headers together on smaller screens
-      line-height: 5rem;
-    }
+div[class*="CardContainer__"] {
+  h4[class*="NoMarginHeader__"] {
+    // Squish card headers together everywhere
+    line-height: 5rem;
   }
 }
 
