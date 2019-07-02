@@ -1,14 +1,14 @@
-import React from "react";
-import styled from "styled-components";
-import { useStaticQuery, graphql, Link } from "gatsby";
-import Image from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import {useStaticQuery, graphql, Link} from 'gatsby';
+import Image from 'gatsby-image';
 
-import StyledCardContainer from "../Layout/Masonry Grid/IteratedCardContainer";
-import StyledNoMarginHeader from "../Typography/Utility/NoMarginHeader";
-import StyledNoMarginParagraph from "../Typography/Utility/NoMarginParagraph";
-import StyledCardImage from "../Layout/Masonry Grid/IteratedCardImage";
+import StyledCardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
+import StyledNoMarginHeader from '../Typography/Utility/NoMarginHeader';
+import StyledNoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
+import StyledCardImage from '../Layout/Masonry Grid/IteratedCardImage';
 
-const WorkContentList = ({ className, children }) => {
+const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { glob: "*/cards/*" } }) {
@@ -42,17 +42,17 @@ const WorkContentList = ({ className, children }) => {
 
   return (
     <>
-      {data.allFile.edges.map(({ node }) => (
+      {data.allFile.edges.map(({node}) => (
         <StyledCardContainer key={node.id}>
           <Link
             to={node.childMarkdownRemark.fields.slug}
-            state={{ fromWork: true }}
+            state={{fromWork: true}}
           >
             <StyledCardImage>
               <Image
                 fluid={
                   node.childMarkdownRemark.frontmatter.image.childImageSharp
-                    .fluid
+                      .fluid
                 }
                 alt=''
               />
@@ -65,7 +65,7 @@ const WorkContentList = ({ className, children }) => {
             {node.childMarkdownRemark.excerpt}
           </StyledNoMarginParagraph>
           <StyledNoMarginParagraph accent='true'>
-            {"HTML, CSS, JavaScript"}
+            {'HTML, CSS, JavaScript'}
           </StyledNoMarginParagraph>
         </StyledCardContainer>
       ))}

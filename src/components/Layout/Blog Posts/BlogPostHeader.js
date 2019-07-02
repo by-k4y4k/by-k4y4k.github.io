@@ -1,12 +1,12 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from 'react';
+import {Link} from 'gatsby';
 
-import Section from "../Section";
-import NoMarginParagraph from "../../Typography/Utility/NoMarginParagraph";
+import Section from '../Section';
+import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
 // eslint-disable-next-line
 import BlinkingTerminalCursor from "../../Typography/Decoration/BlinkingTerminalCursor";
 
-const BlogPostHeader = ({ data, location }) => {
+const BlogPostHeader = ({data, location}) => {
   return (
     <Section>
       <NoMarginParagraph>
@@ -31,7 +31,7 @@ const BlogPostHeader = ({ data, location }) => {
 
 // FIXME: pop out
 
-const CDandLS = ({ children, location }) => {
+const CDandLS = ({children, location}) => {
   if (location.state.fromWork) {
     return <Link to='/#work'> {children}</Link>;
   } else if (location.state.fromBlog) {
