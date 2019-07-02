@@ -1,6 +1,6 @@
 ---
-github: https://github.com/by-k4y4k/by-k4y4k.github.io/
-demo: https://by-k4y4k.github.io/
+github: <https://github.com/by-k4y4k/by-k4y4k.github.io/>
+demo: <https://by-k4y4k.github.io/>
 title: Example project
 image: "../../images/gatsby-icon.png"
 ---
