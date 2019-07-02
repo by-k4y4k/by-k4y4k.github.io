@@ -1,14 +1,14 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Link, useStaticQuery, graphql} from 'gatsby';
+import React from "react";
+import styled from "styled-components";
+import { Link, useStaticQuery, graphql } from "gatsby";
 
-import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
+import IteratedBlogContainer from "../Layout/Blogroll/IteratedBlogContainer";
 // eslint-disable-next-line
-import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer';
-import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
-import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
+import IteratedBlogTextContainer from "../Layout/Blogroll/IteratedBlogTextContainer";
+import NoMarginParagraph from "../Typography/Utility/NoMarginParagraph";
+import NoMarginHeader from "../Typography/Utility/NoMarginHeader";
 
-const BlogContentList = ({className}) => {
+const BlogContentList = ({ className }) => {
   const data = useStaticQuery(graphql`
     {
       allFile(filter: { relativePath: { glob: "*/blog/*" } }) {
@@ -34,7 +34,7 @@ const BlogContentList = ({className}) => {
 
   return (
     <>
-      {data.allFile.edges.map(({node}) => (
+      {data.allFile.edges.map(({ node }) => (
         <IteratedBlogContainer
           className={className}
           key={node.childMarkdownRemark.id}
@@ -47,13 +47,16 @@ const BlogContentList = ({className}) => {
             <NoMarginParagraph>
               {node.childMarkdownRemark.excerpt}
             </NoMarginParagraph>
-            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
               <NoMarginParagraph accent='true'>
                 Posted on {node.childMarkdownRemark.frontmatter.date}
               </NoMarginParagraph>
               <NoMarginParagraph>
-                <Link to={node.childMarkdownRemark.fields.slug}>
-                  {'Read More >>'}
+                <Link
+                  to={node.childMarkdownRemark.fields.slug}
+                  state={{ fromBlog: true }}
+                >
+                  {"Read More >>"}
                 </Link>
               </NoMarginParagraph>
             </div>

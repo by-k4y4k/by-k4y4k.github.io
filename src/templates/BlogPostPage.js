@@ -7,7 +7,7 @@ import Section from '../components/Layout/Section';
 import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader';
 import BlogPostFooter from '../components/Layout/Blog Posts/BlogPostFooter';
 
-const BlogPostPage = ({className, data}) => {
+const BlogPostPage = ({className, data, location}) => {
   const post = data.markdownRemark;
   return (
     <main className={`${className} blog`}>
@@ -19,7 +19,7 @@ const BlogPostPage = ({className, data}) => {
         </title>
         <meta name='description' content={data.markdownRemark.excerpt} />
       </Helmet>
-      <BlogPostHeader data={data} />
+      <BlogPostHeader location={location} data={data} />
       <Section>
         <div>
           <h1>{post.frontmatter.title}</h1>
