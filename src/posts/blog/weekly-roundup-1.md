@@ -5,6 +5,8 @@ date: 28-06-19
 
 I've been pushing a few of my friends to do one of these every week while being slack myself. I think it's time to change that with my very own kayak-flavoured weekly roundups.
 
+<!-- end excerpt -->
+
 I'm not very good at writing down the small "hey check me out, I'm da man" moments as they happen, so I think I’ll just give a few points and a bit of an explanation about the project I’ve been chewing on for so long - my website.
 
 ## Gatsby.js
