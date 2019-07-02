@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import {useStaticQuery, graphql} from 'gatsby';
+import Image from 'gatsby-image';
+
 import StyledCardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
 import StyledNoMarginHeader from '../Typography/Utility/NoMarginHeader';
 import StyledNoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
@@ -18,6 +20,13 @@ const WorkContentList = ({className, children}) => {
                 title
                 github
                 demo
+                image {
+                  childImageSharp {
+                    fluid(maxWidth: 960, background: "#050509") {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
               }
               excerpt(format: PLAIN, pruneLength: 50)
               fields {
@@ -34,7 +43,14 @@ const WorkContentList = ({className, children}) => {
     <>
       {data.allFile.edges.map(({node}) => (
         <StyledCardContainer>
-          <StyledCardImage />
+          <StyledCardImage>
+            <Image
+              fluid={
+                node.childMarkdownRemark.frontmatter.image.childImageSharp.fluid
+              }
+              alt=''
+            />
+          </StyledCardImage>
           <StyledNoMarginHeader>
             {node.childMarkdownRemark.frontmatter.title}
           </StyledNoMarginHeader>
