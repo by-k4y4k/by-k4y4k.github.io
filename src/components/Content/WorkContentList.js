@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {useStaticQuery, graphql} from 'gatsby';
+import {useStaticQuery, graphql, Link} from 'gatsby';
 import Image from 'gatsby-image';
 
 import StyledCardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
@@ -43,14 +43,17 @@ const WorkContentList = ({className, children}) => {
     <>
       {data.allFile.edges.map(({node}) => (
         <StyledCardContainer>
-          <StyledCardImage>
-            <Image
-              fluid={
-                node.childMarkdownRemark.frontmatter.image.childImageSharp.fluid
-              }
-              alt=''
-            />
-          </StyledCardImage>
+          <Link to={node.childMarkdownRemark.fields.slug}>
+            <StyledCardImage>
+              <Image
+                fluid={
+                  node.childMarkdownRemark.frontmatter.image.childImageSharp
+                      .fluid
+                }
+                alt=''
+              />
+            </StyledCardImage>
+          </Link>
           <StyledNoMarginHeader>
             {node.childMarkdownRemark.frontmatter.title}
           </StyledNoMarginHeader>
