@@ -33,6 +33,7 @@ const WorkContentList = ({className, children}) => {
                 slug
               }
             }
+            id
           }
         }
       }
@@ -42,7 +43,7 @@ const WorkContentList = ({className, children}) => {
   return (
     <>
       {data.allFile.edges.map(({node}) => (
-        <StyledCardContainer>
+        <StyledCardContainer key={node.id}>
           <Link to={node.childMarkdownRemark.fields.slug}>
             <StyledCardImage>
               <Image
