@@ -4,7 +4,8 @@ import {Link} from 'gatsby';
 import Section from '../Section';
 import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
 // eslint-disable-next-line
-import BlinkingTerminalCursor from "../../Typography/Decoration/BlinkingTerminalCursor";
+import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor';
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const BlogPostHeader = ({data, location}) => {
   return (
@@ -19,15 +20,16 @@ const BlogPostHeader = ({data, location}) => {
         <code>{data.markdownRemark.parent.prettySize}</code>
         {` - `}
         <code>
-          <Link to="/#work">
+          {/* <Link to="/#work"> */}
+          <AniLink cover direction='up' to='/'>
             <kbd>$ cd ../ && ls </kbd>
             <BlinkingTerminalCursor />
-          </Link>
+          </AniLink>
+          {/* </Link> */}
         </code>
       </NoMarginParagraph>
     </Section>
   );
 };
-
 
 export default BlogPostHeader;

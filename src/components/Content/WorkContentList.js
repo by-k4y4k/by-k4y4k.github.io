@@ -8,6 +8,8 @@ import StyledNoMarginHeader from '../Typography/Utility/NoMarginHeader';
 import StyledNoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
 import StyledCardImage from '../Layout/Masonry Grid/IteratedCardImage';
 
+import AniLink from 'gatsby-plugin-transition-link';
+
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
     {
@@ -44,7 +46,8 @@ const WorkContentList = ({className, children}) => {
     <>
       {data.allFile.edges.map(({node}) => (
         <StyledCardContainer key={node.id}>
-          <Link
+          <AniLink
+            paintDrip
             to={node.childMarkdownRemark.fields.slug}
             state={{fromWork: true}}
           >
@@ -57,7 +60,7 @@ const WorkContentList = ({className, children}) => {
                 alt=''
               />
             </StyledCardImage>
-          </Link>
+          </AniLink>
           <StyledNoMarginHeader>
             {node.childMarkdownRemark.frontmatter.title}
           </StyledNoMarginHeader>

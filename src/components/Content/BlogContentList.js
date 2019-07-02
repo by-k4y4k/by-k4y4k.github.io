@@ -1,12 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Link, useStaticQuery, graphql} from 'gatsby';
+import {useStaticQuery, graphql} from 'gatsby';
 
 import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
 // eslint-disable-next-line
-import IteratedBlogTextContainer from "../Layout/Blogroll/IteratedBlogTextContainer";
+import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer';
 import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
 import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
+
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const BlogContentList = ({className}) => {
   const data = useStaticQuery(graphql`
@@ -52,12 +54,13 @@ const BlogContentList = ({className}) => {
                 Posted on {node.childMarkdownRemark.frontmatter.date}
               </NoMarginParagraph>
               <NoMarginParagraph>
-                <Link
+                <AniLink
+                  cover
+                  direction='down'
                   to={node.childMarkdownRemark.fields.slug}
-                  state={{fromBlog: true}}
                 >
                   {'Read More >>'}
-                </Link>
+                </AniLink>
               </NoMarginParagraph>
             </div>
           </IteratedBlogTextContainer>

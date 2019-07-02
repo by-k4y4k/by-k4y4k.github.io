@@ -5,7 +5,10 @@ import {Helmet} from 'react-helmet';
 
 import Section from '../components/Layout/Section';
 import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader';
-import BlogPostFooter from '../components/Layout/Blog Posts/BlogPostFooter';
+import NoMarginParagraph from '../components/Typography/Utility/NoMarginParagraph';
+import BlinkingTerminalCursor from '../components/Typography/Decoration/BlinkingTerminalCursor';
+
+import AniLink from 'gatsby-plugin-transition-link/AniLink';
 
 const BlogPostPage = ({className, data, location}) => {
   const post = data.markdownRemark;
@@ -26,7 +29,16 @@ const BlogPostPage = ({className, data, location}) => {
           <div dangerouslySetInnerHTML={{__html: post.html}} />
         </div>
       </Section>
-      <BlogPostFooter />
+
+      <Section>
+        <NoMarginParagraph>
+          <AniLink cover direction='up' to='/'>
+            <code>
+              <kbd>$ cd ../ && ls </kbd> <BlinkingTerminalCursor />
+            </code>
+          </AniLink>
+        </NoMarginParagraph>
+      </Section>
     </main>
   );
 };
