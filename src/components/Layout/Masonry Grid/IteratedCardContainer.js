@@ -13,10 +13,10 @@ const StyledCardContainer = styled(CardContainer)`
   margin: 1%;
   padding: 1rem;
 
-  @media (max-width: 425px) {
+  @media (max-width: 599px) {
     width: 100%;
   }
-  @media (min-width: 426px) and (max-width: 1023px) {
+  @media (min-width: 600px) and (max-width: 1023px) {
     width: 45%;
   }
   @media (min-width: 1024px) {
