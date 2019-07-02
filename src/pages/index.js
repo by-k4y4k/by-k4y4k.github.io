@@ -1,10 +1,9 @@
 import React from 'react';
-
-// Meta imports
 import {Helmet} from 'react-helmet';
-
-// Hero Links
 import {Link} from 'gatsby';
+import styled from 'styled-components';
+
+import './../components/layout.scss';
 
 // Layout imports
 import Section from '../components/Layout/Section';
@@ -18,9 +17,6 @@ import HeroType from '../components/Typography/Hero/HeroType';
 // Content imports
 import AboutSectionContent from '../components/Content/AboutSectionContent';
 import BlogContentList from '../components/Content/BlogContentList';
-
-import './../components/layout.scss';
-import styled from 'styled-components';
 import WorkContentList from '../components/Content/WorkContentList';
 
 const IndexPage = ({className}) => (
