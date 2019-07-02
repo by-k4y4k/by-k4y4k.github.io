@@ -12,7 +12,6 @@ const StyledCardImage = styled(CardImage)`
   max-width: 100%;
   min-width: 33%;
   min-height: 150px;
-  background-color: #ccc;
 `;
 
 export default StyledCardImage;
