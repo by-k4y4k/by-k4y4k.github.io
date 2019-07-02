@@ -9,6 +9,7 @@ import BlogPostFooter from '../components/Layout/Blog Posts/BlogPostFooter';
 
 const BlogPostPage = ({className, data, location}) => {
   const post = data.markdownRemark;
+ 
   return (
     <main className={`${className} blog`}>
       <Helmet>

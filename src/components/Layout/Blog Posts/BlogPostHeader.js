@@ -19,26 +19,15 @@ const BlogPostHeader = ({data, location}) => {
         <code>{data.markdownRemark.parent.prettySize}</code>
         {` - `}
         <code>
-          <CDandLS location={location}>
+          <Link to="/#work">
             <kbd>$ cd ../ && ls </kbd>
             <BlinkingTerminalCursor />
-          </CDandLS>
+          </Link>
         </code>
       </NoMarginParagraph>
     </Section>
   );
 };
 
-// FIXME: pop out
-
-const CDandLS = ({children, location}) => {
-  if (location.state.fromWork) {
-    return <Link to='/#work'> {children}</Link>;
-  } else if (location.state.fromBlog) {
-    return <Link to='/#blog'>{children}</Link>;
-  } else {
-    return <Link to='/'>{children}</Link>;
-  }
-};
 
 export default BlogPostHeader;
