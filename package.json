@@ -23,6 +23,7 @@
     "gatsby-source-filesystem": "2.0.43",
     "gatsby-transformer-remark": "2.5.0",
     "gatsby-transformer-sharp": "2.1.21",
+    "gh-pages": "2.0.1",
     "intersection-observer": "0.7.0",
     "node-sass": "4.12.0",
     "prismjs": "1.16.0",
@@ -49,7 +50,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "browserslist": [
     "last 1 version",
