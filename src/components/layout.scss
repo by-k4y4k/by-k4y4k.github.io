@@ -4,6 +4,9 @@
 // VARS
 $accent: #915fee;
 
+// fonts
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+
 // TYPOGRAPHY ==================================================================
 
 html,
@@ -138,11 +141,13 @@ pre[class*="language-"] {
 
 code {
   border-radius: 10px;
-  font-family: monospace;
   border: 1px solid $accent;
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   white-space: nowrap;
+  font-family: "Fira Code", monospace !important;
+  font-feature-settings: "calt" 1;
+  font-variant-ligatures: contextual;
 }
 
 pre {
