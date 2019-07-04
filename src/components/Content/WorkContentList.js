@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import {useStaticQuery, graphql, Link} from 'gatsby';
 import Image from 'gatsby-image';
 
-import StyledCardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
-import StyledNoMarginHeader from '../Typography/Utility/NoMarginHeader';
-import StyledNoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
-import StyledCardImage from '../Layout/Masonry Grid/IteratedCardImage';
+import CardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
+import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
+import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
+import CardImage from '../Layout/Masonry Grid/IteratedCardImage';
 
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
@@ -43,12 +43,12 @@ const WorkContentList = ({className, children}) => {
   return (
     <>
       {data.allFile.edges.map(({node}) => (
-        <StyledCardContainer key={node.id}>
+        <CardContainer key={node.id}>
           <Link
             to={node.childMarkdownRemark.fields.slug}
             state={{fromWork: true}}
           >
-            <StyledCardImage>
+            <CardImage>
               <Image
                 fluid={
                   node.childMarkdownRemark.frontmatter.image.childImageSharp
@@ -56,18 +56,15 @@ const WorkContentList = ({className, children}) => {
                 }
                 alt=''
               />
-            </StyledCardImage>
+            </CardImage>
           </Link>
-          <StyledNoMarginHeader>
+          <NoMarginHeader>
             {node.childMarkdownRemark.frontmatter.title}
-          </StyledNoMarginHeader>
-          <StyledNoMarginParagraph>
+          </NoMarginHeader>
+          <NoMarginParagraph>
             {node.childMarkdownRemark.excerpt}
-          </StyledNoMarginParagraph>
-          <StyledNoMarginParagraph accent='true'>
-            {'HTML, CSS, JavaScript'}
-          </StyledNoMarginParagraph>
-        </StyledCardContainer>
+          </NoMarginParagraph>
+        </CardContainer>
       ))}
     </>
   );
