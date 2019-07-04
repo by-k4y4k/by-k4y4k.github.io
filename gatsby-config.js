@@ -73,6 +73,7 @@ module.exports = {
               aliases: {javascript: 'js'},
             },
           },
+          `gatsby-remark-twemoji-shortcut`,
         ],
       },
     },
