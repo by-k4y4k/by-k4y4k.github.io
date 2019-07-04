@@ -74,6 +74,14 @@ module.exports = {
             },
           },
           `gatsby-remark-twemoji-shortcut`,
+          {
+            resolve: `gatsby-plugin-google-analytics`,
+            options: {
+              trackingId: 'UA-141223900-1',
+              head: false,
+              respectDNT: true,
+            },
+          },
         ],
       },
     },
