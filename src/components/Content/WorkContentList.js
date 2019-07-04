@@ -7,6 +7,7 @@ import CardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
 import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
 import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
 import CardImage from '../Layout/Masonry Grid/IteratedCardImage';
+import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButtons';
 
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
@@ -64,6 +65,10 @@ const WorkContentList = ({className, children}) => {
           <NoMarginParagraph>
             {node.childMarkdownRemark.excerpt}
           </NoMarginParagraph>
+          <StyledIteratedCardButtons
+            github={node.childMarkdownRemark.frontmatter.github}
+            demo={node.childMarkdownRemark.frontmatter.demo}
+          />
         </CardContainer>
       ))}
     </>
