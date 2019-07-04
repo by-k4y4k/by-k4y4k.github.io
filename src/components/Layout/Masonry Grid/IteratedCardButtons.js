@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 import React from 'react';
 
+import StyledGitHubButton from '../../Typography/Decoration/GitHubButton';
+import StyledDemoButton from '../../Typography/Decoration/DemoButton';
+
 const IteratedCardButtons = ({className, children, github, demo}) => {
   if (!github || !demo) return null;
 
@@ -9,8 +12,8 @@ const IteratedCardButtons = ({className, children, github, demo}) => {
 
   return (
     <>
-      <p>{githubLink}</p>
-      <p>{demoLink}</p>
+      <StyledGitHubButton githubLink={githubLink} />
+      <StyledDemoButton demoLink={demoLink} />
     </>
   );
 };
