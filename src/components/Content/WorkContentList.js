@@ -7,6 +7,7 @@ import CardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
 import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
 import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
 import CardImage from '../Layout/Masonry Grid/IteratedCardImage';
+// eslint-disable-next-line
 import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButtons';
 
 const WorkContentList = ({className, children}) => {
