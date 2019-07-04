@@ -237,3 +237,14 @@ body {
 .accent {
   color: $accent;
 }
+
+p {
+  a {
+    svg {
+      height: 1em;
+      width: 1em;
+      top: 0.125em;
+      position: relative;
+    }
+  }
+}
