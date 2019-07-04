@@ -11,13 +11,15 @@ const IteratedCardButtons = ({className, children, github, demo}) => {
   const demoLink = demo.replace(/[<>]/g, '');
 
   return (
-    <>
+    <div className={className}>
       <StyledGitHubButton githubLink={githubLink} />
       <StyledDemoButton demoLink={demoLink} />
-    </>
+    </div>
   );
 };
 
-const StyledIteratedCardButtons = styled(IteratedCardButtons)``;
+const StyledIteratedCardButtons = styled(IteratedCardButtons)`
+  margin: 15px 0;
+`;
 
 export default StyledIteratedCardButtons;
