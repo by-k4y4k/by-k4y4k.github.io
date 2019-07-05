@@ -1,5 +1,5 @@
 ---
-github: <https://github.com/by-k4y4k/by-k4y4k.github.io/>
+github: <https://github.com/by-k4y4k/simple-jquery-todo>
 demo: <https://yet-another-todo-app.netlify.com/>
 title: Simple To-Do App
 image: "../../images/simple-todo-app.png"
