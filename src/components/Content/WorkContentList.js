@@ -10,6 +10,10 @@ import CardImage from '../Layout/Masonry Grid/IteratedCardImage';
 // eslint-disable-next-line
 import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButtons';
 
+const CardDescription = styled(NoMarginParagraph)`
+  flex-grow: 2;
+`;
+
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
     {
@@ -63,9 +67,9 @@ const WorkContentList = ({className, children}) => {
           <NoMarginHeader>
             {node.childMarkdownRemark.frontmatter.title}
           </NoMarginHeader>
-          <NoMarginParagraph>
+          <CardDescription>
             {node.childMarkdownRemark.excerpt}
-          </NoMarginParagraph>
+          </CardDescription>
           <StyledIteratedCardButtons
             github={node.childMarkdownRemark.frontmatter.github}
             demo={node.childMarkdownRemark.frontmatter.demo}
