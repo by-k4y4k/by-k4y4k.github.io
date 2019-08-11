@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import {FiGlobe} from 'react-icons/fi';
-import {IconContext} from 'react-icons';
+import {FiGlobe} from 'react-icons/fi'
+import {IconContext} from 'react-icons'
 
 const DemoButton = ({className, children, demoLink}) => {
   return (
@@ -11,8 +11,8 @@ const DemoButton = ({className, children, demoLink}) => {
         <FiGlobe /> Demo
       </a>
     </IconContext.Provider>
-  );
-};
+  )
+}
 
 const StyledDemoButton = styled(DemoButton)`
   font-size: 1.8em;
@@ -22,6 +22,6 @@ const StyledDemoButton = styled(DemoButton)`
   padding: 5px 10px;
   margin: 0 5px;
   letter-spacing: 3px;
-`;
+`
 
-export default StyledDemoButton;
+export default StyledDemoButton

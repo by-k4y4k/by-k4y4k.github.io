@@ -2,7 +2,7 @@
 github: <https://github.com/by-k4y4k/simple-jquery-todo>
 demo: <https://yet-another-todo-app.netlify.com/>
 title: JavaScript Drum Kit
-image: "../../images/js-drum-kit.png"
+image: '../../images/js-drum-kit.png'
 date: 5-12-18
 ---
 

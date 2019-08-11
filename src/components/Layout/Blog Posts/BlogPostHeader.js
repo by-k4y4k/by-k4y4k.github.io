@@ -1,10 +1,10 @@
-import React from 'react';
-import {Link} from 'gatsby';
+import React from 'react'
+import {Link} from 'gatsby'
 
-import Section from '../Section';
-import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
+import Section from '../Section'
+import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph'
 // eslint-disable-next-line
-import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor';
+import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor'
 
 const BlogPostHeader = ({data}) => {
   return (
@@ -22,7 +22,7 @@ const BlogPostHeader = ({data}) => {
         </code>
       </NoMarginParagraph>
     </Section>
-  );
-};
+  )
+}
 
-export default BlogPostHeader;
+export default BlogPostHeader

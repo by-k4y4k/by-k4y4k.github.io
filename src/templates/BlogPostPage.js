@@ -1,14 +1,14 @@
-import React from 'react';
-import {graphql} from 'gatsby';
-import styled from 'styled-components';
-import {Helmet} from 'react-helmet';
+import React from 'react'
+import {graphql} from 'gatsby'
+import styled from 'styled-components'
+import {Helmet} from 'react-helmet'
 
-import Section from '../components/Layout/Section';
-import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader';
-import BlogPostFooter from '../components/Layout/Blog Posts/BlogPostFooter';
+import Section from '../components/Layout/Section'
+import BlogPostHeader from '../components/Layout/Blog Posts/BlogPostHeader'
+import BlogPostFooter from '../components/Layout/Blog Posts/BlogPostFooter'
 
 const BlogPostPage = ({className, data, location}) => {
-  const post = data.markdownRemark;
+  const post = data.markdownRemark
   return (
     <main className={`${className} blog`}>
       <Helmet>
@@ -28,12 +28,12 @@ const BlogPostPage = ({className, data, location}) => {
       </Section>
       <BlogPostFooter />
     </main>
-  );
-};
+  )
+}
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       html
       frontmatter {
         title
@@ -52,8 +52,8 @@ export const query = graphql`
       excerpt
     }
   }
-`;
+`
 
-const StyledBlogPostPage = styled(BlogPostPage)``;
+const StyledBlogPostPage = styled(BlogPostPage)``
 
-export default StyledBlogPostPage;
+export default StyledBlogPostPage

@@ -1,11 +1,11 @@
-import React from 'react';
-import styled from 'styled-components';
-import {useStaticQuery, graphql} from 'gatsby';
+import React from 'react'
+import styled from 'styled-components'
+import {useStaticQuery, graphql} from 'gatsby'
 
 const AboutSectionContent = ({className}) => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: { frontmatter: { title: { eq: "about" } } }) {
+      allMarkdownRemark(filter: {frontmatter: {title: {eq: "about"}}}) {
         edges {
           node {
             html
@@ -13,7 +13,7 @@ const AboutSectionContent = ({className}) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <div
@@ -22,9 +22,9 @@ const AboutSectionContent = ({className}) => {
         __html: data.allMarkdownRemark.edges[0].node.html,
       }}
     />
-  );
-};
+  )
+}
 
-const StyledAboutSectionContent = styled(AboutSectionContent)``;
+const StyledAboutSectionContent = styled(AboutSectionContent)``
 
-export default StyledAboutSectionContent;
+export default StyledAboutSectionContent

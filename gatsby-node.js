@@ -21,7 +21,7 @@ exports.createPages = ({graphql, actions}) => {
   return graphql(`
     {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(blog)|(cards)/.*\\\\.md$/" } }
+        filter: {fileAbsolutePath: {regex: "/(blog)|(cards)/.*\\\\.md$/"}}
       ) {
         edges {
           node {

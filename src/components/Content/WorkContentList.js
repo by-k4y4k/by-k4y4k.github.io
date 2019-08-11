@@ -1,23 +1,23 @@
-import React from 'react';
-import styled from 'styled-components';
-import {useStaticQuery, graphql, Link} from 'gatsby';
-import Image from 'gatsby-image';
+import React from 'react'
+import styled from 'styled-components'
+import {useStaticQuery, graphql, Link} from 'gatsby'
+import Image from 'gatsby-image'
 
-import CardContainer from '../Layout/Masonry Grid/IteratedCardContainer';
-import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
-import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
-import CardImage from '../Layout/Masonry Grid/IteratedCardImage';
+import CardContainer from '../Layout/Masonry Grid/IteratedCardContainer'
+import NoMarginHeader from '../Typography/Utility/NoMarginHeader'
+import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph'
+import CardImage from '../Layout/Masonry Grid/IteratedCardImage'
 // eslint-disable-next-line
-import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButtons';
+import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButtons'
 
 const CardDescription = styled(NoMarginParagraph)`
   flex-grow: 2;
-`;
+`
 
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { relativePath: { glob: "*/cards/*" } }) {
+      allFile(filter: {relativePath: {glob: "*/cards/*"}}) {
         edges {
           node {
             childMarkdownRemark {
@@ -44,7 +44,7 @@ const WorkContentList = ({className, children}) => {
         }
       }
     }
-  `);
+  `)
 
   return (
     <>
@@ -58,7 +58,7 @@ const WorkContentList = ({className, children}) => {
               <Image
                 fluid={
                   node.childMarkdownRemark.frontmatter.image.childImageSharp
-                      .fluid
+                    .fluid
                 }
                 alt=''
               />
@@ -67,9 +67,7 @@ const WorkContentList = ({className, children}) => {
           <NoMarginHeader>
             {node.childMarkdownRemark.frontmatter.title}
           </NoMarginHeader>
-          <CardDescription>
-            {node.childMarkdownRemark.excerpt}
-          </CardDescription>
+          <CardDescription>{node.childMarkdownRemark.excerpt}</CardDescription>
           <StyledIteratedCardButtons
             github={node.childMarkdownRemark.frontmatter.github}
             demo={node.childMarkdownRemark.frontmatter.demo}
@@ -77,9 +75,9 @@ const WorkContentList = ({className, children}) => {
         </CardContainer>
       ))}
     </>
-  );
-};
+  )
+}
 
-const StyledWorkContentList = styled(WorkContentList)``;
+const StyledWorkContentList = styled(WorkContentList)``
 
-export default StyledWorkContentList;
+export default StyledWorkContentList

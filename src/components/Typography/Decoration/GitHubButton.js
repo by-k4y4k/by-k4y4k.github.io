@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
-import {FiGithub} from 'react-icons/fi';
-import {IconContext} from 'react-icons';
+import {FiGithub} from 'react-icons/fi'
+import {IconContext} from 'react-icons'
 
 const GitHubButton = ({className, children, githubLink}) => {
   return (
@@ -11,8 +11,8 @@ const GitHubButton = ({className, children, githubLink}) => {
         <FiGithub /> GitHub
       </a>
     </IconContext.Provider>
-  );
-};
+  )
+}
 
 const StyledGitHubButton = styled(GitHubButton)`
   font-size: 1.8em;
@@ -22,6 +22,6 @@ const StyledGitHubButton = styled(GitHubButton)`
   padding: 5px 10px;
   margin: 0 5px 0 0;
   letter-spacing: 3px;
-`;
+`
 
-export default StyledGitHubButton;
+export default StyledGitHubButton
