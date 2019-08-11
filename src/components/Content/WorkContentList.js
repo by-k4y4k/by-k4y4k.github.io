@@ -13,10 +13,7 @@ import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButton
 const CardDescription = styled(NoMarginParagraph)`
   flex-grow: 2;
 `
-
-const CardDescription = styled(NoMarginParagraph)`
-  flex-grow: 2;
-`;
+ 
 
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
