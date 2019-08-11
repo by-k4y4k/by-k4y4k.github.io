@@ -1,9 +1,9 @@
-import React from 'react';
-import SEO from '../components/seo';
+import React from 'react'
+import SEO from '../components/seo'
 
-import Section from '../components/Layout/Section';
-import './../components/layout.scss';
-import {Link} from 'gatsby';
+import Section from '../components/Layout/Section'
+import './../components/layout.scss'
+import {Link} from 'gatsby'
 
 const NotFoundPage = () => (
   <Section>
@@ -14,6 +14,6 @@ const NotFoundPage = () => (
       <Link to='/'>{'<< go back'}</Link>
     </p>
   </Section>
-);
+)
 
-export default NotFoundPage;
+export default NotFoundPage

@@ -1,17 +1,17 @@
-import React from 'react';
-import styled from 'styled-components';
-import {Link, useStaticQuery, graphql} from 'gatsby';
+import React from 'react'
+import styled from 'styled-components'
+import {Link, useStaticQuery, graphql} from 'gatsby'
 
-import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer';
+import IteratedBlogContainer from '../Layout/Blogroll/IteratedBlogContainer'
 // eslint-disable-next-line
-import IteratedBlogTextContainer from "../Layout/Blogroll/IteratedBlogTextContainer";
-import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph';
-import NoMarginHeader from '../Typography/Utility/NoMarginHeader';
+import IteratedBlogTextContainer from '../Layout/Blogroll/IteratedBlogTextContainer'
+import NoMarginParagraph from '../Typography/Utility/NoMarginParagraph'
+import NoMarginHeader from '../Typography/Utility/NoMarginHeader'
 
 const BlogContentList = ({className}) => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: { relativePath: { glob: "*/blog/*" } }) {
+      allFile(filter: {relativePath: {glob: "*/blog/*"}}) {
         edges {
           node {
             childMarkdownRemark {
@@ -30,7 +30,7 @@ const BlogContentList = ({className}) => {
         totalCount
       }
     }
-  `);
+  `)
 
   return (
     <>
@@ -64,11 +64,11 @@ const BlogContentList = ({className}) => {
         </IteratedBlogContainer>
       ))}
     </>
-  );
-};
+  )
+}
 
 const StyledBlogContentList = styled(BlogContentList)`
   border-bottom: 3px solid #915fee;
-`;
+`
 
-export default StyledBlogContentList;
+export default StyledBlogContentList

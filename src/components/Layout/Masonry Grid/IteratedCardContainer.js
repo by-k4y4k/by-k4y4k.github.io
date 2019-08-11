@@ -1,9 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
 
 const CardContainer = ({className, children}) => {
-  return <div className={className}>{children}</div>;
-};
+  return <div className={className}>{children}</div>
+}
 
 const StyledCardContainer = styled(CardContainer)`
   display: flex;
@@ -24,6 +24,6 @@ const StyledCardContainer = styled(CardContainer)`
   @media (min-width: 1024px) {
     width: 30%;
   }
-`;
+`
 
-export default StyledCardContainer;
+export default StyledCardContainer

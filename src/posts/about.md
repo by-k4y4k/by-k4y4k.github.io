@@ -1,5 +1,5 @@
 ---
-title: "about"
+title: 'about'
 ---
 
 I'm kayak (yes, as in the small boat you paddle). I build websites, mentor people who aren't quite as experienced as me, and do my best to learn from people who have a few more `console.log()` calls under their belt than I do.

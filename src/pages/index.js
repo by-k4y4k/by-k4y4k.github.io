@@ -1,27 +1,27 @@
-import React from 'react';
+import React from 'react'
 
 // Meta imports
-import {Helmet} from 'react-helmet';
+import {Helmet} from 'react-helmet'
 
 // Hero Links
-import {Link} from 'gatsby';
+import {Link} from 'gatsby'
 
 // Layout imports
-import Section from '../components/Layout/Section';
+import Section from '../components/Layout/Section'
 // eslint-disable-next-line
-import BackgroundSection from '../components/Layout/Hero Section/BackgroundImageSection';
-import HeroContainer from '../components/Layout/Hero Section/HeroContainer';
+import BackgroundSection from '../components/Layout/Hero Section/BackgroundImageSection'
+import HeroContainer from '../components/Layout/Hero Section/HeroContainer'
 
 // Typography imports
-import HeroType from '../components/Typography/Hero/HeroType';
+import HeroType from '../components/Typography/Hero/HeroType'
 
 // Content imports
-import AboutSectionContent from '../components/Content/AboutSectionContent';
-import BlogContentList from '../components/Content/BlogContentList';
+import AboutSectionContent from '../components/Content/AboutSectionContent'
+import BlogContentList from '../components/Content/BlogContentList'
 
-import './../components/layout.scss';
-import styled from 'styled-components';
-import WorkContentList from '../components/Content/WorkContentList';
+import './../components/layout.scss'
+import styled from 'styled-components'
+import WorkContentList from '../components/Content/WorkContentList'
 
 const IndexPage = ({className}) => (
   <main className={className}>
@@ -69,8 +69,8 @@ const IndexPage = ({className}) => (
       <BlogContentList />
     </Section>
   </main>
-);
+)
 
-const StyledIndexPage = styled(IndexPage)``;
+const StyledIndexPage = styled(IndexPage)``
 
-export default StyledIndexPage;
+export default StyledIndexPage

@@ -1,11 +1,11 @@
-import React from 'react';
-import {Link} from 'gatsby';
-import styled from 'styled-components';
+import React from 'react'
+import {Link} from 'gatsby'
+import styled from 'styled-components'
 
-import Section from '../Section';
-import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph';
+import Section from '../Section'
+import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph'
 // eslint-disable-next-line
-import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor';
+import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor'
 
 const BlogPostFooter = ({className}) => {
   return (
@@ -21,12 +21,12 @@ const BlogPostFooter = ({className}) => {
         </code>
       </NoMarginParagraph>
     </Section>
-  );
-};
+  )
+}
 
 const StyledBlogPostFooter = styled(BlogPostFooter)`
   text-align: right;
   color: red;
-`;
+`
 
-export default StyledBlogPostFooter;
+export default StyledBlogPostFooter

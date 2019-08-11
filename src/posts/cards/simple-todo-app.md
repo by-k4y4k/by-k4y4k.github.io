@@ -2,7 +2,7 @@
 github: <https://github.com/by-k4y4k/simple-jquery-todo>
 demo: <https://yet-another-todo-app.netlify.com/>
 title: Simple To-Do App
-image: "../../images/simple-todo-app.png"
+image: '../../images/simple-todo-app.png'
 date: 5-12-18
 ---
 

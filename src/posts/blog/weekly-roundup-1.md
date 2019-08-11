@@ -48,14 +48,14 @@ I've learned a few nifty tricks over the course of the week and a bit working on
 Once I got the hang of styled-components (which took about three hours, thanks to their [amazing docs](https://www.styled-components.com/docs/basics#getting-started)), I soon realised that I was, essentially, hand-typing the same `import` / `export` statements over and over again.
 
 ```javascript
-import React from "react";
-import styled from "styled-components";
+import React from 'react'
+import styled from 'styled-components'
 
-const Name = ({ className, children }) => {};
+const Name = ({className, children}) => {}
 
-const StyledName = styled(Name)``;
+const StyledName = styled(Name)``
 
-export default StyledName;
+export default StyledName
 ```
 
 So I set up some snippets in my editor ([Visual Studio Code](https://code.visualstudio.com/)). You can copy the following into your own snippets settings if you do a lot of work with styled-components too (`ctrl`+`shift`+`p` -> `Preferences: Configure User Snippets`)!
