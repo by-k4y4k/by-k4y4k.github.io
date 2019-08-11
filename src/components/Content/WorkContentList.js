@@ -11,8 +11,7 @@ import CardImage from '../Layout/Masonry Grid/IteratedCardImage';
 import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButtons';
 
 const CardDescription = styled(NoMarginParagraph)`
-  background-color: tomato;
-  flex-grow:2;
+  flex-grow: 2;
 `;
 
 const WorkContentList = ({className, children}) => {
