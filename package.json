@@ -51,7 +51,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "make-good": "yarn prettier --write --config .prettierrc 'src/**/*.{js,md,scss}'"
   },
   "browserslist": [
     "last 1 version",
