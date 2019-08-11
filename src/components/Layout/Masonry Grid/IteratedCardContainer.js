@@ -6,6 +6,8 @@ const CardContainer = ({className, children}) => {
 };
 
 const StyledCardContainer = styled(CardContainer)`
+  display: flex;
+  flex-direction: column;
   box-sizing: border-box;
   height: auto;
   width: 30%;
