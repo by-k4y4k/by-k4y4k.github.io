@@ -1,9 +1,9 @@
 ---
-github: <https://github.com/by-k4y4k/simple-jquery-todo>
-demo: <https://yet-another-todo-app.netlify.com/>
+github: <>
+demo: <https://drum-kit.kayak.rocks/>
 title: JavaScript Drum Kit
 image: '../../images/js-drum-kit.png'
-date: 5-12-18
+date: 10-7-18
 ---
 
 A drum kit you can play with your keyboard!
