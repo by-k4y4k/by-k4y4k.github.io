@@ -1,5 +1,5 @@
 ---
-github: <>
+github: <https://github.com/by-k4y4k/Drum-Kit>
 demo: <https://drum-kit.kayak.rocks/>
 title: JavaScript Drum Kit
 image: '../../images/js-drum-kit.png'
