@@ -32,10 +32,10 @@
     "react-dom": "16.8.6",
     "react-helmet": "5.2.1",
     "react-icons": "3.8.0",
-    "styled-components": "4.3.2"
+    "styled-components": "4.4.0"
   },
   "devDependencies": {
-    "eslint": "6.4.0",
+    "eslint": "6.5.0",
     "eslint-config-google": "0.13.0",
     "eslint-plugin-react": "7.14.3",
     "meyer-reset-scss": "2.0.4",
