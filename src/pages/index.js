@@ -17,7 +17,6 @@ import HeroType from '../components/Typography/Hero/HeroType'
 
 // Content imports
 import AboutSectionContent from '../components/Content/AboutSectionContent'
-import BlogContentList from '../components/Content/BlogContentList'
 
 import './../components/layout.scss'
 import styled from 'styled-components'
@@ -62,11 +61,6 @@ const IndexPage = ({className}) => (
       <div className='work__card-container'>
         <WorkContentList />
       </div>
-    </Section>
-
-    <Section>
-      <div id='blog' />
-      <BlogContentList />
     </Section>
   </main>
 )
