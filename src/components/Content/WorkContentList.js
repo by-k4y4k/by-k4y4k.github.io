@@ -13,7 +13,6 @@ import StyledIteratedCardButtons from '../Layout/Masonry Grid/IteratedCardButton
 const CardDescription = styled(NoMarginParagraph)`
   flex-grow: 2;
 `
- 
 
 const WorkContentList = ({className, children}) => {
   const data = useStaticQuery(graphql`
@@ -29,7 +28,7 @@ const WorkContentList = ({className, children}) => {
                 demo
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 960, background: "#050509") {
+                    fluid(maxWidth: 960, background: "#050509",quality: 90) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -59,7 +58,7 @@ const WorkContentList = ({className, children}) => {
               <Image
                 fluid={
                   node.childMarkdownRemark.frontmatter.image.childImageSharp
-                    .fluid
+                      .fluid
                 }
                 alt=''
               />

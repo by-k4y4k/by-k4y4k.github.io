@@ -46,6 +46,7 @@ module.exports = {
               showCaptions: [`alt`, `title`],
               withWebp: true,
               backgroundColor: `#050509`,
+              quality: 90,
             },
           },
           {
@@ -99,4 +100,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
   ],
-};
+}
