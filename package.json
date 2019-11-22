@@ -36,7 +36,7 @@
   },
   "devDependencies": {
     "eslint-plugin-react": "7.15.0",
-    "eslint": "6.5.0",
+    "eslint": "6.7.0",
     "eslint-config-google": "0.14.0",
     "meyer-reset-scss": "2.0.4",
     "prettier": "1.18.2"
