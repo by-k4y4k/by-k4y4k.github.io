@@ -44,9 +44,6 @@ const IndexPage = ({className}) => (
           <Link to='#work' className='hero-link'>
             work
           </Link>
-          <Link to='#blog' className='hero-link'>
-            blog
-          </Link>
         </div>
       </HeroContainer>
     </BackgroundSection>
