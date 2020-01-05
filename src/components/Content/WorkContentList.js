@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import {useStaticQuery, graphql, Link} from 'gatsby'
+import { useStaticQuery, graphql, Link } from 'gatsby'
 import Image from 'gatsby-image'
 
 import CardContainer from '../Layout/Masonry Grid/IteratedCardContainer'
@@ -14,10 +14,10 @@ const CardDescription = styled(NoMarginParagraph)`
   flex-grow: 2;
 `
 
-const WorkContentList = ({className, children}) => {
+const WorkContentList = ({ className, children }) => {
   const data = useStaticQuery(graphql`
     {
-      allFile(filter: {relativePath: {glob: "*/cards/*"}}) {
+      allFile(filter: { relativePath: { glob: "*/cards/*" } }) {
         edges {
           node {
             childMarkdownRemark {
@@ -28,7 +28,7 @@ const WorkContentList = ({className, children}) => {
                 demo
                 image {
                   childImageSharp {
-                    fluid(maxWidth: 960, background: "#050509",quality: 90) {
+                    fluid(maxWidth: 960, background: "#050509", quality: 90) {
                       ...GatsbyImageSharpFluid
                     }
                   }
@@ -48,17 +48,17 @@ const WorkContentList = ({className, children}) => {
 
   return (
     <>
-      {data.allFile.edges.map(({node}) => (
+      {data.allFile.edges.map(({ node }) => (
         <CardContainer key={node.id}>
           <Link
             to={node.childMarkdownRemark.fields.slug}
-            state={{fromWork: true}}
+            state={{ fromWork: true }}
           >
             <CardImage>
               <Image
                 fluid={
                   node.childMarkdownRemark.frontmatter.image.childImageSharp
-                      .fluid
+                    .fluid
                 }
                 alt=''
               />

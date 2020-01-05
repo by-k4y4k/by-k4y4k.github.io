@@ -1,12 +1,12 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 import Section from '../Section'
 import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph'
 // eslint-disable-next-line
 import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor'
 
-const BlogPostHeader = ({data}) => {
+const BlogPostHeader = ({ data }) => {
   return (
     <Section>
       <NoMarginParagraph>

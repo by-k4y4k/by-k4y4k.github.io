@@ -1,10 +1,10 @@
 import React from 'react'
 
 // Meta imports
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet'
 
 // Hero Links
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 // Layout imports
 import Section from '../components/Layout/Section'
@@ -22,7 +22,7 @@ import './../components/layout.scss'
 import styled from 'styled-components'
 import WorkContentList from '../components/Content/WorkContentList'
 
-const IndexPage = ({className}) => (
+const IndexPage = ({ className }) => (
   <main className={className}>
     <Helmet>
       <html lang='en-au' />

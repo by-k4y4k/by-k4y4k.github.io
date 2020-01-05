@@ -1,14 +1,14 @@
 import React from 'react'
-import {graphql, StaticQuery} from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import styled from 'styled-components'
 
 import BackgroundImage from 'gatsby-background-image'
 
-const BackgroundSection = (props, {className}) => (
+const BackgroundSection = (props, { className }) => (
   <StaticQuery
     query={graphql`
       query {
-        desktop: file(relativePath: {eq: "images/cover.jpg"}) {
+        desktop: file(relativePath: { eq: "images/cover.jpg" }) {
           childImageSharp {
             fluid(quality: 90, maxWidth: 4160) {
               ...GatsbyImageSharpFluid

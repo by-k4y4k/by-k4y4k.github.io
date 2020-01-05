@@ -8,14 +8,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import {useStaticQuery, graphql} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
 // Codacy is chucking a tanty
 // This file isn't mine!!
 
 // eslint-disable-next-line
-function SEO({description, lang, meta, title}) {
-  const {site} = useStaticQuery(
+function SEO({ description, lang, meta, title }) {
+  const { site } = useStaticQuery(
     graphql`
       query {
         site {

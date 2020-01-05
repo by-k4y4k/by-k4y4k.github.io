@@ -1,7 +1,7 @@
 import React from 'react'
-import styled, {keyframes} from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-const BlinkingTerminalCursor = ({className, children}) => {
+const BlinkingTerminalCursor = ({ className, children }) => {
   return <span className={className}>▎</span>
 }
 

@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {FiGlobe} from 'react-icons/fi'
-import {IconContext} from 'react-icons'
+import { FiGlobe } from 'react-icons/fi'
+import { IconContext } from 'react-icons'
 
-const DemoButton = ({className, children, demoLink}) => {
+const DemoButton = ({ className, children, demoLink }) => {
   return (
-    <IconContext.Provider value={{className: 'react-icons'}}>
+    <IconContext.Provider value={{ className: 'react-icons' }}>
       <a className={className} href={demoLink}>
         <FiGlobe /> Demo
       </a>

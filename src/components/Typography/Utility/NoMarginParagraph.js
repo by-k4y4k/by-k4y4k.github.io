@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const NoMarginParagraph = ({className, children}) => {
+const NoMarginParagraph = ({ className, children }) => {
   return <p className={className}>{children}</p>
 }
 

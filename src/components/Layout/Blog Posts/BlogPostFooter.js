@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 
 import Section from '../Section'
@@ -7,7 +7,7 @@ import NoMarginParagraph from '../../Typography/Utility/NoMarginParagraph'
 // eslint-disable-next-line
 import BlinkingTerminalCursor from '../../Typography/Decoration/BlinkingTerminalCursor'
 
-const BlogPostFooter = ({className}) => {
+const BlogPostFooter = ({ className }) => {
   return (
     <Section className={className}>
       <NoMarginParagraph>
