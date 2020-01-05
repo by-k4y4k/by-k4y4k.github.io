@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const HeroType = ({className, children}) => {
+const HeroType = ({ className, children }) => {
   return <h1 className={className}>{children}</h1>
 }
 

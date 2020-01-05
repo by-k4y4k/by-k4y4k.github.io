@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const NoMarginHeader = ({className, children}) => {
+const NoMarginHeader = ({ className, children }) => {
   return <h4 className={className}>{children}</h4>
 }
 

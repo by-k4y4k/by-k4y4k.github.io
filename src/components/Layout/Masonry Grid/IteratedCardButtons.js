@@ -4,8 +4,7 @@ import React from 'react'
 import GitHubButton from '../../Typography/Decoration/GitHubButton'
 import DemoButton from '../../Typography/Decoration/DemoButton'
 
-
-const IteratedCardButtons = ({className, children, github, demo}) => {
+const IteratedCardButtons = ({ className, children, github, demo }) => {
   if ((!github && !demo) || (github === null && demo === null)) return null
 
   const githubLink = github.replace(/[<>]/g, '')
@@ -13,15 +12,19 @@ const IteratedCardButtons = ({className, children, github, demo}) => {
 
   // TODO: refactor this
   if (!githubLink || githubLink === null) {
-    return (<div className={className}>
-      <DemoButton demoLink={demoLink}></DemoButton>
-    </div>)
+    return (
+      <div className={className}>
+        <DemoButton demoLink={demoLink}></DemoButton>
+      </div>
+    )
   }
 
   if (!demoLink || demoLink === null) {
-    return (<div className={className}>
-      <GitHubButton githubLink={githubLink}></GitHubButton>
-    </div>)
+    return (
+      <div className={className}>
+        <GitHubButton githubLink={githubLink}></GitHubButton>
+      </div>
+    )
   }
 
   return (

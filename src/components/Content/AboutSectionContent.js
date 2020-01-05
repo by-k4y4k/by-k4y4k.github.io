@@ -1,11 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-import {useStaticQuery, graphql} from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 
-const AboutSectionContent = ({className}) => {
+const AboutSectionContent = ({ className }) => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(filter: {frontmatter: {title: {eq: "about"}}}) {
+      allMarkdownRemark(filter: { frontmatter: { title: { eq: "about" } } }) {
         edges {
           node {
             html

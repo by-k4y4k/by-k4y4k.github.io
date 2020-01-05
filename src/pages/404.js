@@ -3,7 +3,7 @@ import SEO from '../components/seo'
 
 import Section from '../components/Layout/Section'
 import './../components/layout.scss'
-import {Link} from 'gatsby'
+import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
   <Section>

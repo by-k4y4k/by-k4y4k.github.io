@@ -56,7 +56,8 @@
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "pretty-quick": "pretty-quick",
-    "commit": "commit"
+    "commit": "commit",
+    "make-good": "yarn prettier --write --config .prettierrc 'src/**/*.{js,md,scss}'"
   },
   "browserslist": [
     "last 1 version",

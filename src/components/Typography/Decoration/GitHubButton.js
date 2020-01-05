@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import {FiGithub} from 'react-icons/fi'
-import {IconContext} from 'react-icons'
+import { FiGithub } from 'react-icons/fi'
+import { IconContext } from 'react-icons'
 
-const GitHubButton = ({className, children, githubLink}) => {
+const GitHubButton = ({ className, children, githubLink }) => {
   return (
-    <IconContext.Provider value={{className: 'react-icons'}}>
+    <IconContext.Provider value={{ className: 'react-icons' }}>
       <a className={className} href={githubLink}>
         <FiGithub /> GitHub
       </a>

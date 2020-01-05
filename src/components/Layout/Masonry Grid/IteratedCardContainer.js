@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const CardContainer = ({className, children}) => {
+const CardContainer = ({ className, children }) => {
   return <div className={className}>{children}</div>
 }
 
