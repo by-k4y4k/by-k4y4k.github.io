@@ -35,6 +35,9 @@
     "styled-components": "4.4.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^8.3.4",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/prompt-cli": "^8.3.4",
     "eslint": "6.8.0",
     "eslint-config-google": "0.14.0",
     "eslint-plugin-react": "7.17.0",
@@ -52,7 +55,8 @@
     "start": "yarn develop",
     "serve": "gatsby serve",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "pretty-quick": "pretty-quick"
+    "pretty-quick": "pretty-quick",
+    "commit": "commit"
   },
   "browserslist": [
     "last 1 version",
