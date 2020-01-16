@@ -37,7 +37,7 @@
   "devDependencies": {
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
-    "@commitlint/prompt-cli": "8.3.4",
+    "@commitlint/prompt-cli": "8.3.5",
     "meyer-reset-scss": "2.0.4",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1"
